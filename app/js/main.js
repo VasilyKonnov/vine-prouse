@@ -200,12 +200,6 @@ console.log($('body').width());
         $('.how_connect__modal').addClass('open_modal');
         //console.log($('.open_modal').width());
     });
-
-    $('.button_close').click(function(){
-        $('.how_connect__modal').removeClass('open_modal');
-        body_vs_modal_close();
-    });
-
     $('.lit_mama').click(function(){
         currentServiceSelected = 'lit_mama__modal';
 
@@ -279,9 +273,26 @@ console.log($('body').width());
         $('.error_modal').removeClass('open_modal');
         $('.check-list_modal').removeClass('open_modal');
         $('.feedback_checked_modal').removeClass('open_modal');
+        $('.how_connect__modal').removeClass('open_modal');
+        $('.hidden').removeClass('opacity_0');
+        $('.lit_mama__modal').removeClass('open_modal_2');
+        $('.good_ghost__modal').removeClass('open_modal_2');
+        $('.script_editor__modal').removeClass('open_modal_2');
+        $('.script_correct__modal').removeClass('open_modal_2');
+        $('.script_consult__modal').removeClass('open_modal_2');
+        $('.lit_agent__modal').removeClass('open_modal_2');
+        $('.take_question__modal').removeClass('open_modal_2');
+        $('.hidden').removeClass('opacity_1');
+        $('.hidden').removeClass('opacity_2');
+        $('.hidden').removeClass('opacity_3');
+        $('.make_question_last__modal').removeClass('open_modal_3');
+        $('.make_question_last__modal').removeClass('open_modal_4');
+        $('.take_order__modal').removeClass('open_modal_4');
+        $('.make_request__modal').removeClass('open_modal_3');
+        $('.hidden').removeClass('opacity_2');
     });
 
-
+//---
 
     $('.take_service_inner').click(function(){
         body_vs_open_modal();
@@ -319,12 +330,6 @@ console.log($('body').width());
         $('.lit_mama__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
     })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.hidden').removeClass('opacity_0');
-        $('.lit_mama__modal').removeClass('open_modal_2');
-    })
-
 
     //------------------------------------------------------------
 
@@ -339,11 +344,6 @@ console.log($('body').width());
         body_vs_modal_close();
         $('.good_ghost__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
-    })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.hidden').removeClass('opacity_0');
-        $('.good_ghost__modal').removeClass('open_modal_2');
     })
 
 
@@ -361,11 +361,6 @@ console.log($('body').width());
         $('.script_editor__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
     })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.hidden').removeClass('opacity_0');
-        $('.script_editor__modal').removeClass('open_modal_2');
-    })
 
     //------------------------------------------------------------
 
@@ -379,11 +374,6 @@ console.log($('body').width());
         body_vs_modal_close();
         $('.script_correct__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
-    })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.hidden').removeClass('opacity_0');
-        $('.script_correct__modal').removeClass('open_modal_2');
     })
 
 
@@ -400,11 +390,6 @@ console.log($('body').width());
         $('.script_consult__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
     })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.hidden').removeClass('opacity_0');
-        $('.script_consult__modal').removeClass('open_modal_2');
-    })
 
     //------------------------------------------------------------
 
@@ -419,11 +404,6 @@ console.log($('body').width());
         $('.lit_agent__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_0');
     })
-    $('.button_close').click(function(){
-        body_vs_modal_close();
-        $('.lit_agent__modal').removeClass('open_modal_2');
-        $('.hidden').removeClass('opacity_0');
-    })
 
     //остались вопросы слой - 1
 
@@ -436,11 +416,6 @@ console.log($('body').width());
         body_vs_modal_close();
         $('.take_question__modal').removeClass('open_modal_2');
         $('.open_modal').removeClass('opacity_1');
-    })
-    $('.button_close_st2').click(function(){
-        body_vs_modal_close();
-        $('.take_question__modal').removeClass('open_modal_2');
-        $('.hidden').removeClass('opacity_1');
     })
 
     //остались вопросы слой - 2
@@ -456,10 +431,6 @@ console.log($('body').width());
         $('.open_modal_2').removeClass('opacity_2');
         $('.make_question_last__modal').removeClass('open_modal_3');
     })
-    $('.button_close_st4').click(function(){
-        $('.hidden').removeClass('opacity_2');
-        $('.make_question_last__modal').removeClass('open_modal_3');
-    })
 
 // остались вопросы слой 3
 
@@ -472,37 +443,12 @@ console.log($('body').width());
         $('.open_modal_3').removeClass('opacity_3');
         $('.make_question_last__modal').removeClass('open_modal_4');
     })
-    $('.button_close_st4').click(function(){
-        $('.hidden').removeClass('opacity_3');
-        $('.make_question_last__modal').removeClass('open_modal_4');
-    })
 
 // Посмотреть заказ
 
     $('.take_order').click(function(){
 
-
-// Выбираем отмеченные чекбоксы в то время когда выбираем отмеченные чекбоксы нужно ещё и заголовки выбрать уровня h3
-//        $bookPrice = [];
-//
-//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_price').each(function( index ) {
-//            $bookPrice[index] = $( this ).text();
-//        });
-//
-//        console.log($bookPrice);
-//
-//        $bookContent = [];
-//
-//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_content').each(function( index ) {
-//            $bookContent[index] = $( this ).text();
-//        });
-//        console.log($bookContent);
-
-
-
         var selectedJanres = $('.' + currentServiceSelected + ' .checked input[type="checkbox"]');
-
-
 
         var selectedJanresConcated = '';
 
@@ -510,11 +456,25 @@ console.log($('body').width());
 
         var title = $('.' + currentServiceSelected + ' h2').text();
 
-        var orderResult = '<h3 class="h3">' + title + '</h3>';
+        var separatePrice = $('.' + currentServiceSelected + ' .modal_text_price').text();
+
+        if(separatePrice){
+            separatePrice = '<p>' + separatePrice + '</p>'
+        }
+
+
+        var orderResult = '<h3 class="h3">' + title + '</h3>' + separatePrice;
         var oldBlock = '';
 
         $.each(selectedJanres, function(index, janr){
-            var price = $(janr).parent().parent().find('.work_price').text();
+
+            var book_content = $(janr).parent().parent().find('.book_content').text();
+            var book_price = $(janr).parent().parent().find('.book_price').text();
+
+            var price = book_content + " - " + book_price;
+
+            //var price = $(janr).parent().parent().find('.work_price').text();
+
             var janrBlock = $(janr).parent().parent().parent();
 
             if (!$(janrBlock).hasClass('processed-once')) {
@@ -538,7 +498,7 @@ console.log($('body').width());
 
         var additionalServices = $('.modal_choose_service .checked input[type="checkbox"]');
         var additionalServicesConcated = '';
-
+        console.log("содержание переменной - " + additionalServices);
         if (additionalServices) {
             orderResult += '<h3 class="h3">Дополнительные услуги</h3>';
             $.each(additionalServices, function(index, service){
@@ -567,10 +527,6 @@ console.log($('body').width());
         $('.open_modal_3').removeClass('opacity_3');
         $('.take_order__modal').removeClass('open_modal_4');
     })
-    $('.button_close_st4').click(function(){
-        $('.hidden').removeClass('opacity_3');
-        $('.take_order__modal').removeClass('open_modal_4');
-    })
 
 //-------------------------------------------------------------
 
@@ -585,20 +541,6 @@ console.log($('body').width());
         $('.open_modal').removeClass('opacity_2');
         $('.open_modal_2').removeClass('opacity_2');
     })
-    $('.button_close_st3').click(function(){
-        $('.make_request__modal').removeClass('open_modal_3');
-        $('.hidden').removeClass('opacity_2');
-    })
-
-//-------------------------------------------------------------
-//
-//    var typed = new Typed('#typed-1', {
-//        strings: ["Помогаем авторам <br> писать бестселлеры"],
-//        startDelay: 500,
-//        loop: false,
-//        typeSpeed: 60
-//    });
-
 
 // ---- Анимация
 
@@ -654,7 +596,7 @@ console.log($('body').width());
     }
 
     $('#menu_button').on('click', function(){
-        console.log('Мы в обработчике клика по кнопке меню');
+        //console.log('Мы в обработчике клика по кнопке меню');
         toggleMenu();
         //return false;
     });

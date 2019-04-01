@@ -914,10 +914,10 @@ button.submit{
 .service-wrapp {
   display: flex;
   position: relative;
-  transition: all .4s ease;
+  //transition: all .4s ease;
   &:hover{
-    background-color: #F9F2EB !important;
-    transition: all .4s ease;
+    //background-color: #F9F2EB !important;
+    //transition: all .4s ease;
   }
   .service__item-img {
     width: 324px;
@@ -2952,7 +2952,16 @@ footer{
     display: block;
   }
   .modal_img_service {
-    margin-left: 40px;
+    margin: 0px;
+    width: 100%!important;
+    height: 200px!important;
+    background-position: top center !important;
+    background-size: cover!important;
+    &::before{
+      content: '';
+      float: left;
+      padding-top: 75%;
+    }
   }
   .modal_text_service {
     height: 270px;
