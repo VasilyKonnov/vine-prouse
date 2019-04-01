@@ -8,8 +8,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Тайтл</title>
-    <meta name="description" content="" />
+    <title>Спасибо за твой выбор!</title>
+    <meta name="description" content="Мы свяжемся с вами через 15 минут! Ответим на вопросы, расскажем о наших услугах, спросим как дела и пожелаем всего доброго1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="libs/css/swiper.min.css">
     <link rel="stylesheet" href="libs/css/animate.css">
@@ -20,25 +20,28 @@
 </head>
 <body class="body load">
 <div class="menu-mobile">
-    <a class="scrollLink" href="#service_anchor">Услуги</a>
-    <a class="scrollLink" href="#company_anchor">Об агенстве</a>
-    <a class="scrollLink" href="#reviews_anchor">Отзывы</a>
-    <a class="scrollLink" href="#blog_anchor">Блог</a>
-    <div class="sicial-icon">
-        <a href="#" class="vk"></a>
-        <a href="#" class="inst"></a>
+    <a class="scrollLink" href="http://wineandprose.ru/#service_anchor">Услуги</a>
+    <a class="scrollLink" href="http://wineandprose.ru/#company_anchor">Об агенстве</a>
+    <a class="scrollLink" href="http://wineandprose.ru/#reviews_anchor">Отзывы</a>
+    <a class="scrollLink" href="http://wineandprose.ru/#blog_anchor">Блог</a>
+    <div class="sicial-icon-mob-menu">
+        <p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>
+        <p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>
+        <p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>
     </div>
 </div>
 <header id="header" class="header show">
-    <div class="header-wrapper">
+    <div id="nav_scroll" class="header-wrapper">
         <div class="logo">
-            <a href="/"><img src="img/logo.svg" alt=""></a>
+            <a href="/">
+                <img src="img/logo.svg" alt="">
+            </a>
         </div>
         <nav class="main-menu">
-            <a class="scrollLink" href="#service_anchor">Услуги</a>
-            <a class="scrollLink" href="#company_anchor">Об агенстве</a>
-            <a class="scrollLink" href="#reviews_anchor">Отзывы</a>
-            <a class="scrollLink" href="#blog_anchor">Блог</a>
+            <a class="scrollLink" href="http://wineandprose.ru/#service_anchor">Услуги</a>
+            <a class="scrollLink" href="http://wineandprose.ru/#company_anchor">Об агенстве</a>
+            <a class="scrollLink" href="http://wineandprose.ru/#reviews_anchor">Отзывы</a>
+            <a class="scrollLink" href="http://wineandprose.ru/#blog_anchor">Блог</a>
         </nav>
         <a id="menu_button" class="menu-button">
                 <span class="ico">
@@ -48,9 +51,9 @@
                 </span>
         </a>
         <div class="callback-header">
-            <a href="#" class="inst inst-header"></a>
-            <a href="#" class="vk vk-header"></a>
+            <!--<a href="#" class="vk vk-header"></a>-->
             <a class="header-button how_connect">Связаться с нами</a>
+            <a href="https://www.instagram.com/wine_and_prose/" target="_blank" class="inst-header"><img src="/img/instagram.svg" alt=""><span class="inst-text">Наш инстаграмм</span></a>
         </div>
     </div>
 </header>
@@ -64,7 +67,7 @@
                     <h2 class="h2">Спасибо за обращение!</h2>
                     <p>Мы свяжемся с вами через 15 минут!</p>
                     <p>Ответим на вопросы, расскажем о наших услугах, спросим как дела и пожелаем всего доброго :)</p>
-                    <p>А пока ты можешь <a href="#" class="link-on-blog">почитать наш блог</a></p>
+                    <p>А пока ты можешь <a href="https://instagram.com/alex.gylka" class="link-on-blog">почитать наш блог</a></p>
                 </div>
             </div>
             <div class="col w50">
@@ -75,41 +78,6 @@
 
 
     <!-- Мои модальные окна -->
-
-    <div class="modal__wrapper  write_book__modal hidden">
-        <div data-simplebar class="modal_center__container">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Написать книгу!</h2>
-            <p class="modal_text">Давай напишем хорошую книгу!</br>
-                Оставь заявку. Мы свяжемся и все обсудим.</p>
-
-            <div class="error_div"></div>
-            <form  name="mail_form">
-                <label class="field">
-                    <input type="text" required name="name" class="input-text placeholder validate" data-validate="required" data-placeholder="Ваше имя">
-                </label>
-                <label class="field">
-                    <input type="tel" required name="phone" class="input-phone placeholder validate" data-validate="required" data-placeholder="Телефон">
-                </label>
-                <label class="field">
-                    <input type="email" required name="email" class="input-email placeholder validate" data-validate="required" data-placeholder="E-mail">
-                </label>
-
-                <div class="form__button-wrapper">
-                    <button id="feedback_submit" type="button" class="submit form__pink-button">Оставить заявку сразу</button>
-                    <a class="choose-sevice take_service_inner">Выбрать услугу</a>
-                </div>
-
-                <p class="form_info">Нажимая на кнопку "Оставить заявку" вы даёте согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
-
-                <!--<div class="success-form">-->
-                <!--<div class="table-block">-->
-                <!--<div class="cell ">Сообщение успешно отправлено!</div>-->
-                <!--</div>-->
-                <!--</div>-->
-            </form>
-        </div>
-    </div>
 
     <!-- 2 modal-contact-us -->
 
@@ -122,554 +90,68 @@
             <a href="tel:+79645154789" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
             <a href="https://msng.link/wa/79645154789" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
             <a href="https://msng.link/vi/79645154789" class="choose_connect viber-icon">Написать в Viber</a>
-            <a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>
+            <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         </div>
     </div>
-
-    <!-- 3 modal-contact-us -->
-
-    <div class="modal__wrapper hidden take_check-list__modal">
-        <div data-simplebar class="modal_center__container">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Получить чек лист</h2>
-            <p class="modal_text">Заполни форму и мы сразу отправим чек-лист тебе на e-mail. Бесплатно и быстро!</p>
-            <form action="" method="">
-                <label class="field">
-                    <input type="text" name="name" required class="input-text placeholder validate" data-validate="required" data-placeholder="Ваше имя">
-                </label>
-                <label class="field">
-                    <input type="tel" required name="phone" class="input-phone placeholder validate" data-validate="required" data-placeholder="Телефон">
-                </label>
-                <label class="field">
-                    <input type="text" required name="email" class="input-email placeholder validate" data-validate="required" data-placeholder="E-mail">
-                </label>
-                <label class="form_chekbox">
-                    <input type="checkbox" checked> Еще мне нужна консультация
-                </label>
-
-                <div class="form__button-wrapper">
-                    <button id="feedback_submit" class="submit form__pink-button block-center">Получить бесплатно</button>
-                    <!--<a href="#" class="choose-sevice">Выбрать услугу</a>-->
-                </div>
-
-                <p class="form_info">Нажимая на кнопку "Оставить заявку" вы даёте согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
-
-                <!--<div class="success-form">-->
-                <!--<div class="table-block">-->
-                <!--<div class="cell ">Сообщение успешно отправлено!</div>-->
-                <!--</div>-->
-                <!--</div>-->
-            </form>
-        </div>
-    </div>
-
-
-    <!-- 4 modal-contact-us -->
-
-    <div class="modal__wrapper hidden give_feedback__modal">
-        <div data-simplebar class="modal_center__container feedback_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Оставить отзыв</h2>
-            <p class="modal_text">Заполни форму и после прочтения мы опубликуем ваш отзыв</p>
-            <form action="" method="">
-                <label class="field">
-                    <input type="text" required name="name" class="input-text placeholder validate" data-validate="required" data-placeholder="Ваше имя">
-                </label>
-                <label class="field">
-                    <input type="text" required name="lastname" class="input-text placeholder validate" data-validate="required" data-placeholder="Фамилия">
-                </label>
-                <label class="field">
-                    <input type="tel" required name="phone" class="input-phone placeholder validate" data-validate="required" data-placeholder="Телефон">
-                </label>
-                <label class="field">
-                    <input type="email" required name="email" class="input-email placeholder validate" data-validate="required" data-placeholder="E-mail">
-                </label>
-                <label class="field">
-                    <textarea type="feedback" required name="feedback" class="input-email placeholder validate" data-validate="required" data-placeholder="Ваш отзыв"></textarea>
-                </label>
-                <!--<label class="form_chekbox">-->
-                <!--<input type="checkbox" checked> Еще мне нужна консультация-->
-                <!--</label>-->
-
-                <div class="form__button-wrapper">
-                    <button id="feedback_submit" class="submit form__pink-button block-center">Оставить отзыв</button>
-                    <!--<a href="#" class="choose-sevice">Выбрать услугу</a>-->
-                </div>
-
-                <p class="form_info">Нажимая на кнопку "Оставить заявку" вы даёте согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
-
-                <!--<div class="success-form">-->
-                <!--<div class="table-block">-->
-                <!--<div class="cell ">Сообщение успешно отправлено!</div>-->
-                <!--</div>-->
-                <!--</div>-->
-            </form>
-        </div>
-    </div>
-
-    <!-- 5 modal-contact-us -->
-
-    <div class="modal__wrapper hidden">
-        <div data-simplebar class="modal_center__container check-list_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2 vs_check_icon"><i></i> Чек-лист отправлен</h2>
-            <p class="modal_text">Мы отправили чек лист на указанную почту, письмо должно прийти в течении 5 минут.</p>
-        </div>
-    </div>
-
-    <!-- 6 modal-contact-us -->
-
-    <div class="modal__wrapper hidden">
-        <div data-simplebar class="modal_center__container feedback_cheked_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2 vs_check_icon"><i></i>Отзыв принят</h2>
-            <p class="modal_text">Спасибо за отзыв, скоро мы его опубликуем.</p>
-        </div>
-    </div>
-    <!-- 6.1 modal-contact-us -->
-
-    <div class="modal__wrapper hidden error_modal">
-        <div data-simplebar class="modal_center__container feedback_cheked_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2 vs_check_icon">Произошла ошибка на сервере</h2>
-            <p class="modal_text">Попробуйте отправить сообщение ещё раз.</p>
-        </div>
-    </div>
-
-    <!-- 7 modal-contact-us -->
-
-    <div class="modal__wrapper hidden lit_mama__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Литература мама</h2>
-            <p class="modal_text">Личный коучинг автора.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/1-rectangle.png')"></div>
-
-            <p>Определяем цели, выстраиваем стратегию, выбираем каналы дистрибуции книги. Ежедневно выполняем план и еженедельно встречаемся для обсуждения результатов. Мы создали систему, в которой вы не сможете не написать хорошую книгу. </p>
-            <p>В пакет услуги включено литературное редактирование рукописи на всех этапах, а также авторские методики работы с текстом.</p>
-            <p>Ты можешь прийти к нам просто с идей, уже с половиной книги или с готовой рукописью. Персональный коуч поможет подготовить всё необходимое для выхода книги в свет.</p>
-
-            <form action="#">
-
-                <div class="wrapper_janr">
-                    <h3 class="h3">Художественная литература</h3>
-                    <p>Сложные жанры (фантастика, фэнтази, исторический роман, авангардная литература)</p>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-                </div>
-                <div class="wrapper_janr">
-                    <p>Простые жанры (детектив, любовный роман, мистика, приключения, триллер, боевик)</p>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-                </div>
-                <div class="wrapper_janr">
-                    <h3 class="h3">Нон-фикшн</h3>
-                    <p>Нехудожественная литература</p>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-                </div>
-
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit  make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-
-
-
-    <!-- 8 modal-contact-us -->
-
-    <div class="modal__wrapper hidden good_ghost__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Добрый призрак</h2>
-            <p class="modal_text">Сделаем все за тебя. Тайно и красиво.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/2-rectangle.png')"></div>
-
-            <p>Наши редакторы пишут книги нон-фикшн на заказ. У тебя есть идея, желание рассказать о своей профессиональной деятельности или просто настало время повысить свою экспертность, сделать имя на рынке. Мы оформим твои мысли на бумаге. </p>
-            <p>Сначала через журналистский опрос соберём фактический материал, затем напишем и согласуем с тобой черновик. Возможно, еще один черновик, отредактируем и отдадим корректору на вычитку. В итоге ты получишь книгу и сэкономишь время.</p>
-
-            <form action="#">
-
-                <div class="wrapper_janr">
-                    <h3 class="h3">Нон-фикшен</h3>
-                    <p>Не художественная литература</p>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-                </div>
-                <div class="wrapper_janr">
-                    <h3 class="h3">Мемуары</h3>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-
-                    <label><input type="checkbox" class="chekbox_rd_button" val="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 месяца</span><span class="book_price">123 456 руб.</span></p></label>
-                </div>
-
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit make_request make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <!-- 9 modal-contact-us -->
-
-    <div class="modal__wrapper hidden script_editor__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Редактура рукописи</h2>
-            <p class="modal_text">Проверим чёткость мысли. Нужен текст для подзаголовка.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/3-rectangle.png')"></div>
-
-            <p>Наши редакторы пишут книги нон-фикшн на заказ. У тебя есть идея, желание рассказать о своей профессиональной деятельности или просто настало время повысить свою экспертность, сделать имя на рынке. Мы оформим твои мысли на бумаге. Профессиональный редактор — не соавтор книги. Это первый читатель и первый критик, который поможет автору ответить на вопрос «А всё ли понятно в моей рукописи?».</p>
-            <p>Редактор — это связующее звено между читателем и автором, он смотрит на книгу свежим взглядом, находит проблемные места, доводит текст до ума, и, конечно, до издательства.</p>
-            <p>Оставь заявку и мы проконсультируем об услуге.</p>
-
-            <form action="#">
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <!-- 10 modal-contact-us -->
-
-    <div class="modal__wrapper hidden script_correct__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Корректура рукописи</h2>
-            <p class="modal_text">Нужен текст для подзаголовка.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/4-rectangle.png')"></div>
-
-            <p>Многие писатели допускают ошибки в своих рукописях. Сегодня одна запятая не на своем месте может решить судьбу заявки в издательстве, собрать сотню негативных комментариев в социальных сетях или показать тебя в невыгодном свете.</p>
-            <p>Зачем тебе такой риск, если профессионалы своего дела вычитают и оформят книгу по стандартам русского языка? Никаких сомнений, только результат.</p>
-            <p>Никаких сомнений, только результат. Оставь свои контакты и мы проконсультируем об услуге.</p>
-
-            <form action="#">
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-
-    <!-- 11 modal-contact-us -->
-
-    <div class="modal__wrapper hidden script_consult__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Консультация рукописи</h2>
-            <p class="modal_text">Нужен текст для подзаголовка.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/3-rectangle.png')"></div>
-
-            <p>Профессиональный редактор — не соавтор книги. Это первый читатель и первый критик, который поможет автору ответить на вопрос «А всё ли понятно в моей рукописи?». </p>
-            <p>Редактор — это связующее звено между читателем и автором, он смотрит на книгу свежим взглядом, находит проблемные места, доводит текст до ума, и, конечно, до издательства. </p>
-            <p>Оставь заявку и мы проконсультируем об услуге.</p>
-
-            <form action="#">
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit  make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <!-- 12 modal-contact-us -->
-
-    <div class="modal__wrapper hidden lit_agent__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Литературный агент</h2>
-            <p class="modal_text">Нужен текст для подзаголовка.</p>
-
-            <div class="img_in_modal" style="background-image: url('img/6-rectangle.png')"></div>
-
-            <p>Мы не можем гарантировать издание той или иной книги, но можем сделать максимум, чтобы это важное событие имело место быть.</p>
-            <p>Издательский рынок живет трендами, не малую роль играет и твоя популярность, поэтому услуги литературного агента оплачиваются только после подписания договора в издательстве.</p>
-            <p>Наши агенты берут 20% от сделки.</p>
-
-            <form action="#">
-                <div class="form__button-wrapper block-center">
-                    <a id="feedback_submit" class="submit make_request form__pink-button">Оформить заявку</a>
-                    <!--<button id="feedback_submit" class="submit form__pink-button">Оформить заявку</button>-->
-                    <a class="have_question make_question">У меня есть вопросы</a>
-                </div>
-            </form>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <!-- 12 modal-contact-us -->
-
-    <div class="modal__wrapper hidden take_question__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close_st2">Закрыть <i class="close-icon"></i> </div>
-            <div class="button_prev_modal_st2"><i class="back-icon"></i> Назад</div>
-            <h2 class="h2">Остались вопросы? Ответим на все.</h2>
-            <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
-            <a href="tel:+79645154789" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-            <a href="https://msng.link/wa/79645154789" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-            <a href="https://msng.link/vi/79645154789" class="choose_connect viber-icon">Написать в Viber</a>
-            <a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <div class="modal__wrapper hidden make_question_last__modal">
-        <div data-simplebar class="modal_center__container right_stuck_modal">
-            <div class="button_close_st4">Закрыть <i class="close-icon"></i> </div>
-            <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
-            <h2 class="h2">Остались вопросы? Ответим на все.</h2>
-            <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
-            <a href="tel:+79058970276" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-            <a href="https://msng.link/wa/79058970276" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-            <a href="https://msng.link/vi/79058970276" class="choose_connect viber-icon">Написать в Viber</a>
-            <a href="https://msng.link/vk/vasily_konnov" class="choose_connect vk-icon">Написать в Vk</a>
-            <div class="mb-desc-120"></div>
-        </div>
-    </div>
-
-    <!-- 13 set-modal -->
-
-    <div class="modal__wrapper hidden take_service__modal">
-        <div data-simplebar class="modal_chuse_service">
-
-            <div class="header-modal">
-                <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-                <!--<div class="button_prev_modal"><i class="back-icon"></i> Назад</div>-->
-                <h2 class="h2">Выбрать услугу</h2>
-            </div>
-
-            <div class="body_modal">
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: url('img/1-service.png')"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Литература мама</h3>
-                        <p>Консультируем и сопровождаем авторов<br> от идеи до результата.</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <a class="more lit_mama_inner">Выбрать</a>
-
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: url('img/2-service.png')"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Добрый призрак</h3>
-                        <p>Для того, кто гений в другой области. Специально обученные филологи<br> напишут книгу за тебя. Не отвлекайся от свершений.</p>
-                        <div class="price">от 300 000 руб.</div>
-                        <a class="more good_ghost_inner">Выбрать</a>
-
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #7D546D"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Редактура рукописи</h3>
-                        <p>Консультируем и сопровождаем авторов<br> от идеи до результата.</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <a class="more script_editor_inner">Выбрать</a>
-
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #F1E1D4"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Корректура рукописи</h3>
-                        <p>Консультируем и сопровождаем авторов<br> от идеи до результата.</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <a class="more script_correct_inner">Выбрать</a>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #86394F"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Консультация рукописи</h3>
-                        <p>Нужно краткое описание</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <a class="more script_consult_inner">Выбрать</a>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #9EB2AE"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Литературный агент</h3>
-                        <p>Консультируем и сопровождаем авторов от идеи до результата.</p>
-                        <div class="price">20% от сделки</div>
-                        <a class="more lit_agent_inner">Выбрать</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer_modal">
-                <h3 class="h3">Я не знаю что мне нужно</h3>
-                <p>Проконсультируем и поможем с выбором</p>
-                <a class="more take_question">Попросить консультацию</a>
-                <div class="pb-20"></div>
-            </div>
-
-        </div>
-    </div>
-
-    <!---->
-
-    <div class="modal__wrapper hidden  make_request__modal">
-        <div data-simplebar class="modal_chuse_service">
-
-            <div class="header-modal">
-                <div class="button_close_st3">Закрыть <i class="close-icon"></i> </div>
-                <div class="button_prev_modal_st3"><i class="back-icon"></i> Назад</div>
-                <h2 class="h2">Выбрать дополнительные услуги</h2>
-            </div>
-
-            <div class="body_modal">
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #7D546D"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Редактура рукописи</h3>
-                        <p>Консультируем и сопровождаем авторов<br> от идеи до результата.</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <label class="text_service-input">Выбрать <input type="checkbox" val="Редактура рукописи - от 150 000 руб."></label>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #F1E1D4"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Корректура рукописи</h3>
-                        <p>Консультируем и сопровождаем авторов<br> от идеи до результата.</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <label class="text_service-input">Выбрать <input type="checkbox" val="Корректура рукописи - от 150 000 руб."></label>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #86394F"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Консультация рукописи</h3>
-                        <p>Нужно краткое описание</p>
-                        <div class="price">от 150 000 руб.</div>
-                        <label class="text_service-input">Выбрать <input type="checkbox" val="Консультация рукописи - от 150 000 руб."></label>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="modal_img_service" style="background: #9EB2AE"></div>
-                    <div class="modal_text_service">
-                        <h3 class="h3">Литературный агент</h3>
-                        <p>Консультируем и сопровождаем авторов от идеи до результата.</p>
-                        <div class="price">20% от сделки</div>
-                        <label class="text_service-input">Выбрать <input type="checkbox" val="Литературный агент - от 150 000 руб."></label>
-                    </div>
-                </div>
-                <div class="modal_wrapper_service">
-                    <div class="block-center mtb-40px">
-                        <a class="pink-button take_order">Продолжить</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_modal">
-                <h3 class="h3">Я не знаю что мне нужно</h3>
-                <p>Проконсультируем и поможем с выбором</p>
-                <a class="more make_question_last">Попросить консультацию</a>
-                <div class="pb-20"></div>
-            </div>
-
-        </div>
-    </div>
-
-    <!--    -->
-
-    <div class="modal__wrapper hidden take_order__modal">
-        <div data-simplebar class="modal_chuse_service">
-            <div class="header-modal">
-                <div class="button_close_st4">Закрыть <i class="close-icon"></i></div>
-                <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
-                <h2 class="h2">Оставить заявку</h2>
-            </div>
-            <div class="order_result">
-                <p><span>Услуга:</span> Литература мама</p>
-                <p><span>Жанр:</span> Художественная литература (сложные жанры)</p>
-                <p><span>Кол-во страниц:</span> 100 страниц</p>
-                <p><span>Стоимость:</span> 123 456 руб.</p>
-                <p><span>Срок:</span> 2,5 мес.</p>
-                <p><span>Доп. услуги:</span> Редактура рукописи</p>
-            </div>
-            <div class="body_modal_order_result">
-                <form action="" method="">
-                    <label class="field">
-                        <input type="text" required name="name" class="input-text placeholder validate" data-validate="required" data-placeholder="Ваше имя">
-                    </label>
-                    <label class="field">
-                        <input type="tel" required name="phone" class="input-phone placeholder validate" data-validate="required" data-placeholder="Телефон">
-                    </label>
-                    <label class="field">
-                        <input type="text" required name="email" class="input-email placeholder validate" data-validate="required" data-placeholder="E-mail">
-                    </label>
-                    <label class="form_chekbox">
-                        <!--<input type="checkbox" checked> Еще мне нужна консультация-->
-                    </label>
-                    <div class="form__button-wrapper">
-                        <button id="feedback_submit" class="submit form__pink-button block-center">Получить бесплатно</button>
-                        <!--<a href="#" class="choose-sevice">Выбрать услугу</a>-->
-                    </div>
-
-                    <p class="form_info">Нажимая на кнопку "Оставить заявку" вы даёте согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
-                </form>
-                <div class="pb-20"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!---->
 
 
     <div class="modal__wrapper hidden polit_conf__modal">
         <div data-simplebar class="modal_center__container politic-konf">
             <div class="button_close">Закрыть <i class="close-icon"></i> </div>
             <h2 class="h2">Политика конфиденциальности</h2>
-            <p class="modal_text">Настоящая Политика в области обработки персональных данных и конфиденциальности персональной информации (далее — Политика) действует в отношении всей информации, которую ООО «Сноб Медиа» и/или ее аффилированные лица, включая все лица, входящие в одну группу с ООО «Сноб Медиа», могут получить о пользователе во время использования им любого из сайтов, сервисов, служб, программ и продуктов ООО «Сноб Медиа» (далее — Сервисы), а также в ходе исполнения ООО «Сноб Медиа» / его аффилированными лицами любых соглашений и договоров, заключенных с пользователем в связи с использованием Сервисов. Согласие пользователя на предоставление персональных данных (персональной информации), данное им в соответствии с настоящей Политикой в рамках отношений с одним из лиц, входящих в группу лиц ООО «Сноб Медиа», распространяется на все лица, входящие в данную группу лиц.</p>
-            <p class="modal_text">Использование Сервисов означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации, а именно на совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных" как без, так и с использованием средств автоматизации, и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своем интересе; в случае несогласия с этими условиями пользователь должен воздержаться от использования Сервисов.</p>
-        </div>
+                <p class="modal_text">Политика в отношении обработки персональных данных</p>
+                <p class="modal_text">1. Общие положения</p>
+                <p class="modal_text">Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных Гылка Александра Сергеевна (далее – Оператор).
+                    Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+                    Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта http://wineandprose.ru.</p>
+
+                <p class="modal_text">2. Основные понятия, используемые в Политике</p>
+                <p class="modal_text">Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;
+                    Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);
+                    Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу http://wineandprose.ru;
+                    Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;
+                    Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;
+                    Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;
+                    Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;
+                    Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта http://wineandprose.ru;
+                    Пользователь – любой посетитель веб-сайта http://wineandprose.ru;
+                    Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;
+                    Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;
+                    Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;
+                    Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</p>
+
+                <p class="modal_text">3. Оператор может обрабатывать следующие персональные данные Пользователя</p>
+                <p class="modal_text">Фамилия, имя, отчество;
+                    Электронный адрес;
+                    Номера телефонов;
+                    Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+                    Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+
+                <p class="modal_text">4. Цели обработки персональных данных</p>
+                <p class="modal_text">Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; уточнение деталей заказа.
+                    Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты alexandra.gylka@yandex.ru с пометкой «Отказ от уведомлениях о новых продуктах и услугах и специальных предложениях».
+                    Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+
+                <p class="modal_text">5. Правовые основания обработки персональных данных</p>
+                <p class="modal_text">Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте http://wineandprose.ru. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.
+                    Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+
+                <p class="modal_text">6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</p>
+                <p class="modal_text">Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.
+                    Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.
+                    Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.
+                    В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора alexandra.gylka@yandex.ru с пометкой «Актуализация персональных данных».
+                    Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператораalexandra.gylka@yandex.ru с пометкой «Отзыв согласия на обработку персональных данных».</p>
+
+                <p class="modal_text">7. Трансграничная передача персональных данных</p>
+                <p class="modal_text">Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.
+                    Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p>
+
+                <p class="modal_text">8. Заключительные положения</p>
+                <p class="modal_text">Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты alexandra.gylka@yandex.ru.
+                    В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.
+                    Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу http://wineandprose.ru/privacy_policy.</p>
+             </div>
     </div>
 
 </div>
@@ -686,6 +168,8 @@
 <script src="libs/js/simplebar.js"></script>
 <script src="libs/js/wow.min.js"></script>
 <script src="js/form.js"></script>
+<script src="js/plugins/inputmask.js"></script>
+<script src="js/plugins/jquery.inputmask.js"></script>
 <script src="js/js-thank-you.js?v=1"></script>
 </body>
 </html>

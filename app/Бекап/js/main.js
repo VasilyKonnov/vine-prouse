@@ -1,52 +1,3 @@
-// Валидация
-//function validate(){
-//    console.log('1');
-//    var validator = new FormValidator('mail_form', [
-//        {
-//            name: 'name',
-//            display: 'Ошибка ввода имени',
-//            rules: 'required'
-//        }
-        //{
-        //    name: 'alphanumeric',
-        //    rules: 'alpha_numeric'
-        //},
-        //{
-        //    name: 'password',
-        //    rules: 'required'
-        //}, {
-        //    name: 'password_confirm',
-        //    display: 'password confirmation',
-        //    rules: 'required|matches[password]'
-        //}, {
-        //    name: 'email',
-        //    rules: 'valid_email',
-        //    depends: function() {
-        //        return Math.random() > .5;
-        //    }
-        //}, {
-        //    name: 'minlength',
-        //    display: 'min length',
-        //    rules: 'min_length[8]'
-        //}
-//    ], function(errors, event) {
-//        if (errors.length > 0) {
-//            var errorString = '';
-//
-//            for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
-//                errorString += errors[i].message + '<br />';
-//            }
-//
-//            $('.error_div').innerHTML = errorString;
-//        }
-//    });
-//    console.log(validator);
-//    console.log('2');
-//}
-
-
-
-
 function body_vs_open_modal(){
     //console.log('1');
     var $body = $(document.body).add('#header');
@@ -61,84 +12,170 @@ function body_vs_modal_close(){
     $body.width("auto");
     //console.log('2');
 }
-
-
 $(document).ready(function(){
 
+    function autoType(elementClass, typingSpeed){
+        var thhis = $(elementClass);
+        thhis.css({
+            "position": "relative",
+            "display": "inline-block"
+        });
+        thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+        thhis = thhis.find(".text-js");
+        var text = thhis.text().trim().split('');
+        var amntOfChars = text.length;
+        var newString = "";
+        thhis.text("|");
+        setTimeout(function(){
+            thhis.css("opacity",1);
+            thhis.prev().removeAttr("style");
+            thhis.text("");
+            for(var i = 0; i < amntOfChars; i++){
+                (function(i,char){
+                    setTimeout(function() {
+                        newString += char;
+                        thhis.text(newString);
+                    },i*typingSpeed);
+                })(i+1,text[i]);
+            }
+        },500);
+    }
+    autoType(".type-js", 150);
+
+$(".phone_mask").inputmask({"mask": "+7 (999) 99-99-999"});
 
 console.log($('body').width());
 
-// отправка письма
 
     $('#feedback_submit').click(function(){
-        //validate();
         var form_id = $('#write_book_form');
-        $.post('/mail.php', {
-                modal_id : 'write_book_form',
-                name : form_id.find("input[name='name']").val(),
-                phone : form_id.find("input[name='phone']").val(),
-                email : form_id.find("input[name='email']").val(),
-            },
-            function(result) {
-                var message = '';
-                if(result == 'mail_success'){
-                    window.location.href = "http://"+window.location.hostname+"/thank-you.php";
-                }else{
-                    message = result;
-                    console.log(message);
-                    $('.write_book__modal').removeClass('open_modal');
-                    $('.error_modal').addClass('open_modal');
-                }
-            });
+        $name = form_id.find("input[name='name']").val();
+        $phone = form_id.find("input[name='phone']").val();
+        $email = form_id.find("input[name='email']").val();
+        //validate();
+        if($name && $phone && $email) {
+            $.post('/mail.php', {
+                    modal_id : 'write_book_form',
+                    name : $name,
+                    phone : $phone,
+                    email : $email,
+                },
+                function(result) {
+                    var message = '';
+                    if(result == 'mail_success'){
+                        window.location.href = "http://"+window.location.hostname+"/thank-you.php";
+                    }else{
+                        message = result;
+                        console.log(message);
+                        $('.write_book__modal').removeClass('open_modal');
+                        $('.error_modal').addClass('open_modal');
+                    }
+                });
+        }
     });
+
+//Отправляем письмо из формы Чек-лист
+
     $('#feedback_submit_2').click(function(){
         //validate();
         var form_id = $('#check_list_form');
-        $.post('/mail.php', {
-                modal_id : 'check_list_form',
-                name : form_id.find("input[name='name']").val(),
-                phone : form_id.find("input[name='phone']").val(),
-                email : form_id.find("input[name='email']").val(),
-                checkbox : form_id.find("input[name='checkbox']").prop('checked'),
-                //checkbox : form_id.find("input[name='checkbox']").val(),
-            },
-            function(result) {
-                var message = '';
-                if(result == 'mail_success'){
-                    $('.take_check-list__modal').removeClass('open_modal');
-                    $('.check-list_modal').addClass('open_modal');
-                }else{
-                    message = result;
-                    console.log(message);
-                    $('.take_check-list__modal').removeClass('open_modal');
-                    $('.error_modal').addClass('open_modal');
-                }
-            });
-    });
+        $name = form_id.find("input[name='name']").val();
+        $phone = form_id.find("input[name='phone']").val();
+        $email = form_id.find("input[name='email']").val();
+        $checkbox = form_id.find("input[name='checkbox']").prop('checked');
+        if($name && $phone && $email) {
+            $.post('/mail.php', {
+                    modal_id: 'check_list_form',
+                    name: $name,
+                    phone: $phone,
+                    email: $email,
+                    checkbox: $checkbox,
+                    //checkbox : form_id.find("input[name='checkbox']").val(),
+                },
+                function (result) {
+                    var message = '';
+                    if (result == 'mail_success') {
+                        $('.take_check-list__modal').removeClass('open_modal');
+                        $('.check-list_modal').addClass('open_modal');
+                    } else {
+                        message = result;
+                        console.log(message);
+                        $('.take_check-list__modal').removeClass('open_modal');
+                        $('.error_modal').addClass('open_modal');
+                    }
+                });
+            }
+        });
+
+// Отправяем письмо из формы обратная связь
+
     $('#feedback_submit_3').click(function(){
         var form_id = $('#give_feedback_form');
-        $.post('/mail.php', {
-                modal_id : 'give_feedback_form',
-                name : form_id.find("input[name='name']").val(),
-                lastname : form_id.find("input[name='lastname']").val(),
-                phone : form_id.find("input[name='phone']").val(),
-                email : form_id.find("input[name='email']").val(),
-                feedbackText : form_id.find("textarea[name='feedbackText']").val(),
-            },
-            function(result) {
-                var message = '';
-                if(result == 'mail_success'){
-                    $('.give_feedback__modal').removeClass('open_modal');
-                    $('.feedback_checked_modal').addClass('open_modal');
-                }else{
-                    message = result;
-                    console.log(message);
-                    $('.give_feedback__modal').removeClass('open_modal');
-                    $('.error_modal').addClass('open_modal');
-                }
-            });
-    });
+        $name = form_id.find("input[name='name']").val();
+        $lastname = form_id.find("input[name='lastname']").val();
+        $phone = form_id.find("input[name='phone']").val();
+        $email = form_id.find("input[name='email']").val();
+        $feedbackText = form_id.find("textarea[name='feedbackText']").val();
 
+        if($name && $lastname && $phone && $email && $feedbackText) {
+            $.post('/mail.php', {
+                    modal_id: 'give_feedback_form',
+                    name: $name,
+                    lastname: $lastname,
+                    phone: $phone,
+                    email: $email,
+                    feedbackText: $feedbackText,
+                },
+                //console.log('Текст после функции отправки письма'),
+                function (result) {
+                    var message = '';
+                    if (result == 'mail_success') {
+                        $('.give_feedback__modal').removeClass('open_modal');
+                        $('.feedback_checked_modal').addClass('open_modal');
+                    } else {
+                        message = result;
+                        console.log(message);
+                        $('.give_feedback__modal').removeClass('open_modal');
+                        $('.error_modal').addClass('open_modal');
+                    }
+                });
+            }
+        });
+
+// Отправяем письмо из формы сделать заказ
+
+    $('#feedback_submit_order').click(function(){
+        var form_id = $('#service_form');
+        $name = form_id.find("input[name='name']").val();
+        $phone = form_id.find("input[name='phone']").val();
+        $email = form_id.find("input[name='email']").val();
+        $selected_title = $("input[name='selected_title']").val();
+        $selected_janres = $("input[name='selected_janres']").val();
+        $selected_additional_services = $("input[name='selected_additional_services']").val();
+        if($name && $phone && $email) {
+            //alert('full');
+            $.post('/mail.php', {
+                    modal_id: 'service_form',
+                    name: $name,
+                    phone: $phone,
+                    email: $email,
+                    selected_title: $selected_title,
+                    selected_janres: $selected_janres,
+                    selected_additional_services: $selected_additional_services,
+                },
+                function (result) {
+                    var message = '';
+                    if (result == 'mail_success') {
+                        window.location.href = "http://" + window.location.hostname + "/thank-you.php";
+                    } else {
+                        message = result;
+                        console.log(message);
+                        $(".modal__wrapper").removeClass("open_modal open_modal_2 open_modal_3 open_modal_4 opacity_0 opacity_1 opacity_2 opacity_3 opacity_4");
+                        $('.error_modal').addClass('open_modal');
+                    }
+                });
+        }
+    });
 
 
     $(".modal_center__container").click(function(e) {
@@ -152,29 +189,11 @@ console.log($('body').width());
     });
 
     $( ".modal__wrapper" ).click(function(){
-
-        //$(".modal_center__container").click(function(e) {
-        //    e.stopPropagation();
-        //});
-        //$(".modal_choose_service").click(function(e) {
-        //    e.stopPropagation();
-        //});
-        //$(".right_stuck_modal").click(function(e) {
-        //    e.stopPropagation();
-        //});
-        $(".modal__wrapper").removeClass("open_modal");
-        $(".modal__wrapper").removeClass("open_modal_2");
-        $(".modal__wrapper").removeClass("open_modal_3");
-        $(".modal__wrapper").removeClass("open_modal_4");
-        $(".modal__wrapper").removeClass("opacity_0");
-        $(".modal__wrapper").removeClass("opacity_1");
-        $(".modal__wrapper").removeClass("opacity_2");
-        $(".modal__wrapper").removeClass("opacity_3");
-        body_vs_modal_close()
+        $(".modal__wrapper").removeClass("open_modal open_modal_2 open_modal_3 open_modal_4 opacity_0 opacity_1 opacity_2 opacity_3 opacity_4");
+        body_vs_modal_close();
     });
 
-
-
+    var currentServiceSelected = '';
 
     $('.how_connect').click(function(){
         body_vs_open_modal();
@@ -188,35 +207,43 @@ console.log($('body').width());
     });
 
     $('.lit_mama').click(function(){
+        currentServiceSelected = 'lit_mama__modal';
+
         body_vs_open_modal();
         $('.lit_mama__modal').addClass('open_modal');
     });
 
     $('.good_ghost').click(function(){
+        currentServiceSelected = 'good_ghost__modal';
         body_vs_open_modal();
         $('.good_ghost__modal').addClass('open_modal');
     });
 
     $('.script_editor').click(function(){
+        currentServiceSelected = 'script_editor__modal';
         body_vs_open_modal();
         $('.script_editor__modal').addClass('open_modal');
     });
 
     $('.script_consult').click(function(){
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.script_consult__modal').addClass('open_modal');
     });
     $('.script_consult_2').click(function(){
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.script_consult__modal').addClass('open_modal');
     });
 
     $('.script_correct').click(function(){
+        currentServiceSelected = 'script_correct__modal';
         body_vs_open_modal();
         $('.script_correct__modal').addClass('open_modal');
     });
 
     $('.lit_agent').click(function(){
+        currentServiceSelected = 'lit_agent__modal';
         body_vs_open_modal();
         $('.lit_agent__modal').addClass('open_modal');
     });
@@ -282,6 +309,7 @@ console.log($('body').width());
     // Внутренние модалки
 
     $('.lit_mama_inner').click(function(){
+        currentServiceSelected = 'lit_mama__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.lit_mama__modal').addClass('open_modal_2');
@@ -302,6 +330,7 @@ console.log($('body').width());
 
 
     $('.good_ghost_inner').click(function(){
+        currentServiceSelected = 'good_ghost__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.good_ghost__modal').addClass('open_modal_2');
@@ -322,6 +351,7 @@ console.log($('body').width());
 
 
     $('.script_editor_inner').click(function(){
+        currentServiceSelected = 'script_editor__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_editor__modal').addClass('open_modal_2');
@@ -340,6 +370,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.script_correct_inner').click(function(){
+        currentServiceSelected = 'script_correct__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_editor__modal').addClass('open_modal_2');
@@ -359,6 +390,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.script_consult_inner').click(function(){
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_consult__modal').addClass('open_modal_2');
@@ -377,6 +409,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.lit_agent_inner').click(function(){
+        currentServiceSelected = 'lit_agent__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.lit_agent__modal').addClass('open_modal_2');
@@ -392,7 +425,7 @@ console.log($('body').width());
         $('.hidden').removeClass('opacity_0');
     })
 
-    //остались вопросы слой -1
+    //остались вопросы слой - 1
 
     $('.take_question').click(function(){
         body_vs_open_modal();
@@ -419,16 +452,15 @@ console.log($('body').width());
         $('.make_question_last__modal').addClass('open_modal_3');
     })
     $('.button_prev_modal_st4').click(function(){
-        body_vs_modal_close();
         $('.open_modal').removeClass('opacity_2');
         $('.open_modal_2').removeClass('opacity_2');
         $('.make_question_last__modal').removeClass('open_modal_3');
     })
     $('.button_close_st4').click(function(){
-        body_vs_modal_close();
         $('.hidden').removeClass('opacity_2');
         $('.make_question_last__modal').removeClass('open_modal_3');
     })
+
 // остались вопросы слой 3
 
     $('.make_question_last').click(function(){
@@ -448,6 +480,85 @@ console.log($('body').width());
 // Посмотреть заказ
 
     $('.take_order').click(function(){
+
+
+// Выбираем отмеченные чекбоксы в то время когда выбираем отмеченные чекбоксы нужно ещё и заголовки выбрать уровня h3
+//        $bookPrice = [];
+//
+//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_price').each(function( index ) {
+//            $bookPrice[index] = $( this ).text();
+//        });
+//
+//        console.log($bookPrice);
+//
+//        $bookContent = [];
+//
+//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_content').each(function( index ) {
+//            $bookContent[index] = $( this ).text();
+//        });
+//        console.log($bookContent);
+
+
+
+        var selectedJanres = $('.' + currentServiceSelected + ' .checked input[type="checkbox"]');
+
+
+
+        var selectedJanresConcated = '';
+
+//Заголовок модалки
+
+        var title = $('.' + currentServiceSelected + ' h2').text();
+
+        var orderResult = '<h3 class="h3">' + title + '</h3>';
+        var oldBlock = '';
+
+        $.each(selectedJanres, function(index, janr){
+            var price = $(janr).parent().parent().find('.work_price').text();
+            var janrBlock = $(janr).parent().parent().parent();
+
+            if (!$(janrBlock).hasClass('processed-once')) {
+
+
+                if ($(janrBlock).find('h3').length) {
+                    var title = $(janrBlock).find('h3').text();
+                    orderResult += '<p><b>' + title + '</b></p>';
+                }
+
+                var subTitle = $(janrBlock).find('.subtitle').text();
+
+
+                orderResult += '<p><i>' + subTitle + '</i></p>';
+                $(janrBlock).addClass('processed-once')
+            }
+
+            orderResult += '<p>' + price + '</p>';
+            selectedJanresConcated += price + ';';
+        })
+
+        var additionalServices = $('.modal_choose_service .checked input[type="checkbox"]');
+        var additionalServicesConcated = '';
+
+        if (additionalServices) {
+            orderResult += '<h3 class="h3">Дополнительные услуги</h3>';
+            $.each(additionalServices, function(index, service){
+                var title = $(service).parent().parent().parent().find('h3').text();
+                var price = $(service).parent().parent().parent().find('.price').text();
+
+                orderResult += '<p><b>' + title + '</b></p>';
+                orderResult += '<p>' + price + '</p>';
+                //additionalServicesConcated += value + ';';
+
+            })
+        }
+
+        $('.order_result').html(orderResult);
+
+
+        $('input[name="selected_janres"]').val(orderResult);
+        //$('input[name="selected_additional_services"]').val(additionalServicesConcated);
+        //$('input[name="selected_title"]').val(title);
+
         body_vs_open_modal();
         $('.open_modal_3').addClass('opacity_3');
         $('.take_order__modal').addClass('open_modal_4');
@@ -463,8 +574,6 @@ console.log($('body').width());
 
 //-------------------------------------------------------------
 
-
-
     $('.make_request').click(function(){
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_2');
@@ -472,25 +581,23 @@ console.log($('body').width());
         $('.make_request__modal').addClass('open_modal_3');
     })
     $('.button_prev_modal_st3').click(function(){
-        body_vs_modal_close();
         $('.make_request__modal').removeClass('open_modal_3');
         $('.open_modal').removeClass('opacity_2');
         $('.open_modal_2').removeClass('opacity_2');
     })
     $('.button_close_st3').click(function(){
-        body_vs_modal_close();
         $('.make_request__modal').removeClass('open_modal_3');
         $('.hidden').removeClass('opacity_2');
     })
 
 //-------------------------------------------------------------
-
-    var typed = new Typed('#typed-1', {
-        strings: ["Помогаем авторам <br> писать книги"],
-        startDelay: 500,
-        loop: false,
-        typeSpeed: 60
-    });
+//
+//    var typed = new Typed('#typed-1', {
+//        strings: ["Помогаем авторам <br> писать бестселлеры"],
+//        startDelay: 500,
+//        loop: false,
+//        typeSpeed: 60
+//    });
 
 
 // ---- Анимация
@@ -753,7 +860,5 @@ function numEffect($obj) {
             this.innerHTML = (num + 3).toFixed(0);
         }
     });
-
-
 
 }

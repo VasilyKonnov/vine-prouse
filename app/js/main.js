@@ -12,25 +12,39 @@ function body_vs_modal_close(){
     $body.width("auto");
     //console.log('2');
 }
-
-
 $(document).ready(function(){
+
+    function autoType(elementClass, typingSpeed){
+        var thhis = $(elementClass);
+        thhis.css({
+            "position": "relative",
+            "display": "inline-block"
+        });
+        thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+        thhis = thhis.find(".text-js");
+        var text = thhis.text().trim().split('');
+        var amntOfChars = text.length;
+        var newString = "";
+        thhis.text("|");
+        setTimeout(function(){
+            thhis.css("opacity",1);
+            thhis.prev().removeAttr("style");
+            thhis.text("");
+            for(var i = 0; i < amntOfChars; i++){
+                (function(i,char){
+                    setTimeout(function() {
+                        newString += char;
+                        thhis.text(newString);
+                    },i*typingSpeed);
+                })(i+1,text[i]);
+            }
+        },500);
+    }
+    autoType(".type-js", 150);
 
 $(".phone_mask").inputmask({"mask": "+7 (999) 99-99-999"});
 
 console.log($('body').width());
-
-// отправка письма
-//Отправляем письмо из формы заказать книгу
-//$name = form_id.find("input[name='name']").val();
-//$phone = form_id.find("input[name='phone']").val();
-//$email = form_id.find("input[name='email']").val();
-//$checkbox = form_id.find("input[name='checkbox']").prop('checked');
-//$lastname = form_id.find("input[name='lastname']").val();
-//$feedbackText = form_id.find("textarea[name='feedbackText']").val();
-//$selected_title = $("input[name='selected_title']").val();
-//$selected_janres = $("input[name='selected_janres']").val();
-//$selected_additional_services = $("input[name='selected_additional_services']").val();
 
 
     $('#feedback_submit').click(function(){
@@ -102,8 +116,6 @@ console.log($('body').width());
         $phone = form_id.find("input[name='phone']").val();
         $email = form_id.find("input[name='email']").val();
         $feedbackText = form_id.find("textarea[name='feedbackText']").val();
-
-        //console.log($name, $lastname, $phone, $email, $feedbackText);
 
         if($name && $lastname && $phone && $email && $feedbackText) {
             $.post('/mail.php', {
@@ -195,43 +207,43 @@ console.log($('body').width());
     });
 
     $('.lit_mama').click(function(){
-        currentServiceSelected = 'lit_mama';
+        currentServiceSelected = 'lit_mama__modal';
 
         body_vs_open_modal();
         $('.lit_mama__modal').addClass('open_modal');
     });
 
     $('.good_ghost').click(function(){
-        currentServiceSelected = 'good_ghost';
+        currentServiceSelected = 'good_ghost__modal';
         body_vs_open_modal();
         $('.good_ghost__modal').addClass('open_modal');
     });
 
     $('.script_editor').click(function(){
-        currentServiceSelected = 'script_editor';
+        currentServiceSelected = 'script_editor__modal';
         body_vs_open_modal();
         $('.script_editor__modal').addClass('open_modal');
     });
 
     $('.script_consult').click(function(){
-        currentServiceSelected = 'script_consult';
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.script_consult__modal').addClass('open_modal');
     });
     $('.script_consult_2').click(function(){
-        currentServiceSelected = 'script_consult_2';
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.script_consult__modal').addClass('open_modal');
     });
 
     $('.script_correct').click(function(){
-        currentServiceSelected = 'script_correct';
+        currentServiceSelected = 'script_correct__modal';
         body_vs_open_modal();
         $('.script_correct__modal').addClass('open_modal');
     });
 
     $('.lit_agent').click(function(){
-        currentServiceSelected = 'lit_agent';
+        currentServiceSelected = 'lit_agent__modal';
         body_vs_open_modal();
         $('.lit_agent__modal').addClass('open_modal');
     });
@@ -297,7 +309,7 @@ console.log($('body').width());
     // Внутренние модалки
 
     $('.lit_mama_inner').click(function(){
-        currentServiceSelected = 'lit_mama';
+        currentServiceSelected = 'lit_mama__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.lit_mama__modal').addClass('open_modal_2');
@@ -318,7 +330,7 @@ console.log($('body').width());
 
 
     $('.good_ghost_inner').click(function(){
-        currentServiceSelected = 'good_ghost';
+        currentServiceSelected = 'good_ghost__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.good_ghost__modal').addClass('open_modal_2');
@@ -339,7 +351,7 @@ console.log($('body').width());
 
 
     $('.script_editor_inner').click(function(){
-        currentServiceSelected = 'script_editor';
+        currentServiceSelected = 'script_editor__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_editor__modal').addClass('open_modal_2');
@@ -358,7 +370,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.script_correct_inner').click(function(){
-        currentServiceSelected = 'script_correct';
+        currentServiceSelected = 'script_correct__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_editor__modal').addClass('open_modal_2');
@@ -378,7 +390,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.script_consult_inner').click(function(){
-        currentServiceSelected = 'script_consult';
+        currentServiceSelected = 'script_consult__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.script_consult__modal').addClass('open_modal_2');
@@ -397,7 +409,7 @@ console.log($('body').width());
     //------------------------------------------------------------
 
     $('.lit_agent_inner').click(function(){
-        currentServiceSelected = 'lit_agent';
+        currentServiceSelected = 'lit_agent__modal';
         body_vs_open_modal();
         $('.open_modal').addClass('opacity_0');
         $('.lit_agent__modal').addClass('open_modal_2');
@@ -440,13 +452,11 @@ console.log($('body').width());
         $('.make_question_last__modal').addClass('open_modal_3');
     })
     $('.button_prev_modal_st4').click(function(){
-        body_vs_modal_close();
         $('.open_modal').removeClass('opacity_2');
         $('.open_modal_2').removeClass('opacity_2');
         $('.make_question_last__modal').removeClass('open_modal_3');
     })
     $('.button_close_st4').click(function(){
-        body_vs_modal_close();
         $('.hidden').removeClass('opacity_2');
         $('.make_question_last__modal').removeClass('open_modal_3');
     })
@@ -470,17 +480,60 @@ console.log($('body').width());
 // Посмотреть заказ
 
     $('.take_order').click(function(){
-        var selectedJanres = $('.' + currentServiceSelected + '__modal .checked input[type="checkbox"]');
+
+
+// Выбираем отмеченные чекбоксы в то время когда выбираем отмеченные чекбоксы нужно ещё и заголовки выбрать уровня h3
+//        $bookPrice = [];
+//
+//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_price').each(function( index ) {
+//            $bookPrice[index] = $( this ).text();
+//        });
+//
+//        console.log($bookPrice);
+//
+//        $bookContent = [];
+//
+//        $('.' + currentServiceSelected + ' ' + '.wrapper_janr').find('div.checked').next().find('.book_content').each(function( index ) {
+//            $bookContent[index] = $( this ).text();
+//        });
+//        console.log($bookContent);
+
+
+
+        var selectedJanres = $('.' + currentServiceSelected + ' .checked input[type="checkbox"]');
+
+
 
         var selectedJanresConcated = '';
-        var title = $('.' + currentServiceSelected + '__modal h2').text();
+
+//Заголовок модалки
+
+        var title = $('.' + currentServiceSelected + ' h2').text();
+
         var orderResult = '<h3 class="h3">' + title + '</h3>';
+        var oldBlock = '';
 
         $.each(selectedJanres, function(index, janr){
-            var value = $(janr).val();
+            var price = $(janr).parent().parent().find('.work_price').text();
+            var janrBlock = $(janr).parent().parent().parent();
 
-            orderResult += '<p>' + value + '</p>';
-            selectedJanresConcated += value + ';';
+            if (!$(janrBlock).hasClass('processed-once')) {
+
+
+                if ($(janrBlock).find('h3').length) {
+                    var title = $(janrBlock).find('h3').text();
+                    orderResult += '<p><b>' + title + '</b></p>';
+                }
+
+                var subTitle = $(janrBlock).find('.subtitle').text();
+
+
+                orderResult += '<p><i>' + subTitle + '</i></p>';
+                $(janrBlock).addClass('processed-once')
+            }
+
+            orderResult += '<p>' + price + '</p>';
+            selectedJanresConcated += price + ';';
         })
 
         var additionalServices = $('.modal_choose_service .checked input[type="checkbox"]');
@@ -489,10 +542,12 @@ console.log($('body').width());
         if (additionalServices) {
             orderResult += '<h3 class="h3">Дополнительные услуги</h3>';
             $.each(additionalServices, function(index, service){
-                var value = $(service).val();
+                var title = $(service).parent().parent().parent().find('h3').text();
+                var price = $(service).parent().parent().parent().find('.price').text();
 
-                orderResult += '<p>' + value + '</p>';
-                additionalServicesConcated += value + ';';
+                orderResult += '<p><b>' + title + '</b></p>';
+                orderResult += '<p>' + price + '</p>';
+                //additionalServicesConcated += value + ';';
 
             })
         }
@@ -500,9 +555,9 @@ console.log($('body').width());
         $('.order_result').html(orderResult);
 
 
-        $('input[name="selected_janres"]').val(selectedJanresConcated);
-        $('input[name="selected_additional_services"]').val(additionalServicesConcated);
-        $('input[name="selected_title"]').val(title);
+        $('input[name="selected_janres"]').val(orderResult);
+        //$('input[name="selected_additional_services"]').val(additionalServicesConcated);
+        //$('input[name="selected_title"]').val(title);
 
         body_vs_open_modal();
         $('.open_modal_3').addClass('opacity_3');
@@ -526,25 +581,23 @@ console.log($('body').width());
         $('.make_request__modal').addClass('open_modal_3');
     })
     $('.button_prev_modal_st3').click(function(){
-        body_vs_modal_close();
         $('.make_request__modal').removeClass('open_modal_3');
         $('.open_modal').removeClass('opacity_2');
         $('.open_modal_2').removeClass('opacity_2');
     })
     $('.button_close_st3').click(function(){
-        body_vs_modal_close();
         $('.make_request__modal').removeClass('open_modal_3');
         $('.hidden').removeClass('opacity_2');
     })
 
 //-------------------------------------------------------------
-
-    var typed = new Typed('#typed-1', {
-        strings: ["Помогаем авторам <br> писать книги"],
-        startDelay: 500,
-        loop: false,
-        typeSpeed: 60
-    });
+//
+//    var typed = new Typed('#typed-1', {
+//        strings: ["Помогаем авторам <br> писать бестселлеры"],
+//        startDelay: 500,
+//        loop: false,
+//        typeSpeed: 60
+//    });
 
 
 // ---- Анимация

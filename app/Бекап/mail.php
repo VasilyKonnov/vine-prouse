@@ -97,7 +97,6 @@ if(!empty($_POST['modal_id'])) {
                         'Имя: '. $name . "\r\n" .
                         'Номер телефона: ' . $phone . "\r\n" .
                         'Email: ' . $email;
-            sendEmailToClient($email);
         }
 //        var_dump($_POST);
     }
@@ -124,7 +123,7 @@ if(!empty($_POST['modal_id'])) {
 
             $mail->Subject = 'Чек лист '.$name;
 
-            $body =     'Клиент получил чек-листа. ' . '<br>' .
+            $body =     'Клиент получил чек-лист. ' . '<br>' .
                 'Имя: ' . $name . '<br>' .
                 'Телефон: ' . $phone . '<br>' .
                 'Email: ' . $email . '<br>' . $checkbox;
@@ -172,25 +171,28 @@ if(!empty($_POST['modal_id'])) {
     /* Форма заказа */
 
     elseif($_POST['modal_id'] == 'service_form') {
-        if(empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['selected_title']) || empty($_POST['selected_janres'])  ) {
-            exit('Ошибка принятых данных от модального окна "Оставить отзыв!"');
+        if(empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['email']) ) {
+            exit('Ошибка принятых данных от модального окна "Закаказ!"');
         }else{
+
+//            var_dump($_POST);
+
             $name = $_POST['name'];
             $phone = $_POST['phone'];
             $email = $_POST['email'];
-            $selected_title = $_POST['selected_title'];
+//            $selected_title = $_POST['selected_title'];
             $selected_janres = $_POST['selected_janres'];
-            $selected_additional_servicest = $_POST['selected_additional_services'];
+//            $selected_additional_servicest = $_POST['selected_additional_services'];
 
             $mail->Subject = 'Заявка max '.$name;
 
             $body =     'Новая заявка на написание книги.' . '<br>' .
                 'Имя: '. $name . '<br>' .
                 'Номер телефона: ' . $phone . '<br>' .
-                'Email: ' . $email. '<br>' .
-                'Услуга: ' . $selected_title. '<br>' .
-                'Жанр: ' . $selected_janres. '<br>' .
-                'Дополнительные услуги: ' . $selected_additional_servicest;
+                'Email: ' . $email. '<br>' . $selected_janres;
+//                'Услуга: ' . $selected_title. '<br>' .
+//                'Жанр: ' . $selected_janres. '<br>' .
+//                'Дополнительные услуги: ' . $selected_additional_servicest;
 
             $altbody =  'Новая заявка на написание книги ' . $name . ' ' . $lastname . "\r\n" .
                 'Имя: '. $name . "\r\n" .
