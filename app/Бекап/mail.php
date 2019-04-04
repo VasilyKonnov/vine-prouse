@@ -229,7 +229,7 @@ try {
     $mail->setFrom('wineprose@wineprose.ru', 'Сайт Wine&Prose');
 
     $mail->addAddress('vasiliy.konnov@gmail.com');     // Add a recipient
-//    $mail->addAddress('alexmase21@yandex.ru');     // Add a recipient
+    $mail->addAddress('alexmase21@yandex.ru');     // Add a recipient
 
 // Add a recipient
 

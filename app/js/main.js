@@ -5,7 +5,6 @@ function body_vs_open_modal(){
     $body.css("overflow", "hidden");
     $body.width(oldWidth);
 }
-
 function body_vs_modal_close(){
     var $body = $(document.body);
     $body.css("overflow", "auto");
@@ -13,6 +12,19 @@ function body_vs_modal_close(){
     //console.log('2');
 }
 $(document).ready(function(){
+
+    $('.close_mob_menu').click(function(){
+        $('.menu-button').click();
+    });
+    $('.redit_service_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#service_anchor";
+    });
+    $('.redit_company_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#company_anchor";
+    });
+    $('.redit_reviews_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#reviews_anchor";
+    });
 
     function autoType(elementClass, typingSpeed){
         var thhis = $(elementClass);
@@ -44,7 +56,7 @@ $(document).ready(function(){
 
 $(".phone_mask").inputmask({"mask": "+7 (999) 99-99-999"});
 
-console.log($('body').width());
+//console.log($('body').width());
 
 
     $('#feedback_submit').click(function(){
@@ -448,7 +460,7 @@ console.log($('body').width());
 
     $('.take_order').click(function(){
 
-        var selectedJanres = $('.' + currentServiceSelected + ' .checked input[type="checkbox"]');
+        var selectedJanres = $('.' + currentServiceSelected + ' .checked input[type="radio"]');
 
         var selectedJanresConcated = '';
 
@@ -482,7 +494,7 @@ console.log($('body').width());
 
                 if ($(janrBlock).find('h3').length) {
                     var title = $(janrBlock).find('h3').text();
-                    orderResult += '<p><b>' + title + '</b></p>';
+                    orderResult += '<p class="order-sub-title">' + title + '</p>';
                 }
 
                 var subTitle = $(janrBlock).find('.subtitle').text();
@@ -498,14 +510,14 @@ console.log($('body').width());
 
         var additionalServices = $('.modal_choose_service .checked input[type="checkbox"]');
         var additionalServicesConcated = '';
-        console.log("содержание переменной - " + additionalServices);
-        if (additionalServices) {
+        //console.log("содержание переменной - " + additionalServices);
+        if ($(additionalServices).length) {
             orderResult += '<h3 class="h3">Дополнительные услуги</h3>';
             $.each(additionalServices, function(index, service){
                 var title = $(service).parent().parent().parent().find('h3').text();
                 var price = $(service).parent().parent().parent().find('.price').text();
 
-                orderResult += '<p><b>' + title + '</b></p>';
+                orderResult += '<p class="order-sub-title">' + title + '</p>';
                 orderResult += '<p>' + price + '</p>';
                 //additionalServicesConcated += value + ';';
 
@@ -688,6 +700,11 @@ console.log($('body').width());
 
     });
 
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+
 });
 
 
@@ -783,10 +800,6 @@ function contentEffect() {
     }
 }
 
-$( "a.scrollLink" ).click(function( event ) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-});
 
 //
 //$(".phone_mask").mask("+7(999) 99-99-999");

@@ -14,7 +14,23 @@ function body_vs_modal_close(){
 }
 $(document).ready(function(){
 
-console.log($('body').width());
+    $('.close_mob_menu').click(function(){
+        $('.menu-button').click();
+    });
+
+    $('.redit_service_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#service_anchor";
+    });
+
+    $('.redit_company_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#company_anchor";
+    });
+
+    $('.redit_reviews_anchor').click(function(){
+        window.location.href = "http://"+window.location.hostname+"/#reviews_anchor";
+    });
+
+//console.log($('body').width());
 
 // отправка письма
 
@@ -568,6 +584,10 @@ console.log($('body').width());
 
     });
 
+    //$( "a.scrollLink" ).click(function( event ) {
+    //    event.preventDefault();
+    //    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    //});
 });
 
 
@@ -663,10 +683,10 @@ function contentEffect() {
     }
 }
 
-$( "a.scrollLink" ).click(function( event ) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-});
+//$( "a.scrollLink" ).click(function( event ) {
+//    event.preventDefault();
+//    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+//});
 
 //
 //$(".phone_mask").mask("+7(999) 99-99-999");

@@ -8,8 +8,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Тайтл</title>
-    <meta name="description" content="" />
+    <title>Литературное агентство Wine&Prose</title>
+    <meta name="description" content="Помогаем авторам писать бестселлеры. Потому что с каждой книгой мир становится лучше" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="libs/css/swiper.min.css">
     <link rel="stylesheet" href="libs/css/animate.css">
@@ -25,15 +25,21 @@
     <a class="scrollLink" href="#reviews_anchor">Отзывы</a>
     <a class="scrollLink" href="#blog_anchor">Блог</a>
     <div class="sicial-icon-mob-menu">
-        <p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>
-        <p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>
-        <p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>
+
+        <bitton class="pink-button how_connect">Связаться</bitton>
+
+
+        <!--<p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>-->
+        <!--<p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>-->
+        <!--<p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>-->
     </div>
 </div>
     <header id="header" class="header show">
         <div id="nav_scroll" class="header-wrapper">
             <div class="logo">
-                <img src="img/logo.svg" alt="">
+                <a href="/">
+                    <img src="img/logo.svg" alt="">
+                </a>
             </div>
             <nav class="main-menu">
                 <a class="scrollLink" href="#service_anchor">Услуги</a>
@@ -95,7 +101,7 @@
             <div class="col w50">
                 <div class="wrapper-text">
                     <p class="top-text wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">Услуги</p>
-                    <h2 class="h2 wow fadeInRight" data-wow-duration="1.4s" data-wow-delay=".6s">Литература мама</h2>
+                    <h2 class="h2 wow fadeInRight" data-wow-duration="1.4s" data-wow-delay=".6s">Литературная мама</h2>
                     <p class="wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Если ты не знаешь с чего начать <br>или начал, но потерялся по пути.</p>
                     <p class="wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Консультируем и сопровождаем авторов <br>от идеи до результата, от рукописи - до издательства.</p>
                     <p class="price wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".9s">от $700</p>
@@ -137,13 +143,13 @@
             <div class="col w50">
 
                 <!-- показываем только в максимум 851 -->
-                <div class="service-wrapp hide-min-851 hidden-desctop">
-                    <div class="service__item-img" style='background-image: url("../img/redactura_main.png")'></div>
+                <div class="service-wrapp hide-min-581 hidden-desctop">
+                    <div class="service__item-img" style='background-image: url("../img/redactura_main_mob.png"); background-color: #F9F2EB;'></div>
                 </div>
                 <!-- *** -->
 
                 <div class="service-wrapp wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-                    <div class="service__item-img hide-max-850 " style='background-image: url("../img/redactura_main.png")'></div>
+                    <div class="service__item-img hide-max-580 " style='background-image: url("../img/redactura_main.png"); background-color: #F9F2EB;'></div>
                     <div class="service__item-text">
                         <p class="top-text">Услуги</p>
                         <h3 class="h3">Редактура рукописи</h3>
@@ -156,12 +162,12 @@
 
 
                 <!-- показываем только в максимум 851 -->
-                <div class="service-wrapp hide-min-851 hidden-desctop">
-                    <div class="service__item-img" style='background-image: url("../img/consultation_main.png")'></div>
+                <div class="service-wrapp hide-min-581 hidden-desctop">
+                    <div class="service__item-img" style='background-image: url("../img/consultation_main_mob.png"); background-color: #E6C7B3;'></div>
                 </div>
                 <!-- *** -->
                 <div class="service-wrapp wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-                    <div class="service__item-img  hide-max-850" style='background-image: url("../img/consultation_main.png")'></div>
+                    <div class="service__item-img  hide-max-580" style='background-image: url("../img/consultation_main.png"); background-color: #E6C7B3;'></div>
                     <div class="service__item-text">
                         <p class="top-text">Услуги</p>
                         <h3 class="h3">Консультация рукописи</h3>
@@ -175,15 +181,15 @@
             <div class="col w50">
 
                 <!-- показываем только в максимум 851 -->
-                <div class="service-wrapp hidden-desctop hide-min-851">
-                    <div class="service__item-img" style='background-image: url("../img/correctura.png")'></div>
+                <div class="service-wrapp hidden-desctop hide-min-581">
+                    <div class="service__item-img" style='background-image: url("../img/correctura_mob.png"); background-color: #E6C7B3;'></div>
                 </div>
                 <!-- *** -->
                 <div class="service-wrapp wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-                    <div class="service__item-img hide-max-850" style='background-image: url("../img/correctura.png")'></div>
+                    <div class="service__item-img hide-max-580" style='background-image: url("../img/correctura.png"); background-color: #E6C7B3;                           '></div>
                     <div class="service__item-text">
                         <p class="top-text">Услуги</p>
-                        <h3 class="h3">Коррекатура рукописи</h3>
+                        <h3 class="h3">Корректура рукописи</h3>
                         <p class="price">$2 - 1000 знаков</p>
                         <a class="more script_correct">Подробнее</a>
                         <span class="namber-page namber-service">06</span>
@@ -191,12 +197,12 @@
                 </div>
 
                 <!-- показываем только в максимум 851 -->
-                <div class="service-wrapp hide-min-851 hidden-desctop">
-                    <div class="service__item-img" style='background-image: url("../img/literature_agent_main.png")'></div>
+                <div class="service-wrapp hide-min-581 hidden-desctop">
+                    <div class="service__item-img" style='background-image: url("../img/literature_agent_main_mob.png"); background-color: #F9F2EB;'></div>
                 </div>
                 <!-- *** -->
                 <div class="service-wrapp wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-                    <div class="service__item-img hide-max-850" style='background-image: url("../img/literature_agent_main.png")'></div>
+                    <div class="service__item-img hide-max-580" style='background-image: url("../img/literature_agent_main.png"); background-color: #F9F2EB;'></div>
                     <div class="service__item-text">
                         <p class="top-text">Услуги</p>
                         <h3 class="h3">Литературный агент</h3>
@@ -248,7 +254,7 @@
         <div class="flex-container grey-fon">
             <div class="col w50">
                 <div class="wrapper-text height-616">
-                    <h2 class="h2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Чек-лист «Как написать книгу за 60 дней»</h2>
+                    <h2 class="h2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Чек-лист «Как написать книгу и не сойти с ума»</h2>
                     <p class="p wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Лайфхаки для молодых авторов и не только. Бесплатно расскажем с чего начать, на что обратить внимание и как не совершить самые распространенные ошибки.</p>
                     <p class="p wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Отправим на email. Бесплатно и быстро.</p>
                     <a class="pink-button wow fadeInLeft take_check-list" data-wow-duration="1.3s" data-wow-delay=".8s">Получить бесплатно</a>
@@ -272,11 +278,12 @@
                 <div class="wrapper-text top-padd-96">
                     <p class="top-text wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">Наши принципы</p>
                     <h2 class="h2 wow fadeInRight" data-wow-duration="1.4s" data-wow-delay=".6s">Как мы работаем</h2>
-                    <ul class="wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">
-                        <li><p>Творим искусство без выходных</p></li>
-                        <li><p>Исходим из бюджета автора</p></li>
-                        <li><p>Находим индивидуальный подход</p></li>
-                        <li><p>Не раскрываем конфиденциальную информацию</p></li>
+                    <ul class="ul_how_we_work wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">
+                        <li><p>Творим искусство с 9 утра до 10 вечера. Кроме воскресенья. В этот день мы пьем вино и читаем ваши рукописи, и поэтому не принимаем звонки.</p></li>
+                        <li><p>Всем студентам предоставляем скидку 10% на любую услугу. А если ты с филологического факультета или специализируешься на прозе, то - 15%.</p></li>
+                        <li><p>Каждому автору подберём индивидуальное решение литературной проблемы.</p></li>
+                        <li><p>Если мы пишем книгу на заказ, то можем добавить в договор пункт о неразглашении. Мы умеем хранить секреты!</p></li>
+                        <li><p>После каждой встречи, беседы высылаем резюме, чтобы ты не забыл ничего важного.</p></li>
                     </ul>
                     <a class="pink-button wow fadeInRight take_service" data-wow-duration="1.2s" data-wow-delay=".9s">Выбрать услугу</a>
                     <span class="namber-page">10</span>
@@ -296,7 +303,7 @@
                                 <div class="we-work__img" style='background-image: url("img/1.1-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Идея</h3>
-                                    <p class="work_p">Определяемся с жанром и кол-вом страниц. Определяемся с целями. Выбираем каналы дистрибуции. Выбираем систему работы.</p>
+                                    <p class="work_p">Определяем: жанр, количество страниц, цель книги. Выбираем каналы дистрибуции и систему работы.</p>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +312,7 @@
                                 <div class="we-work__img" style='background-image: url("img/1.2-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Анализ</h3>
-                                    <p class="work_p">Собираем фактический материал. Анализируем конкуретнов..</p>
+                                    <p class="work_p">Собираем фактический материал. Изучаем конкурентов. Назначаем дедлайны.</p>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +325,7 @@
                                 <div class="we-work__img" style='background-image: url("img/1.3-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Стратегия</h3>
-                                    <p class="work_p">Разрабатываем план. Определяем писательскую норму. Прописываем этапы работы.</p>
+                                    <p class="work_p">Разрабатываем план. Составляем схему книги. Прописываем героев или проводим интервью.</p>
                                 </div>
                             </div>
                         </div>
@@ -327,7 +334,7 @@
                                 <div class="we-work__img" style='background-image: url("img/1.4-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Черновик</h3>
-                                    <p class="work_p">Пишем под чутким руководством. Корректируем план. Встречаемся раз в неделю. Делаем результат.</p>
+                                    <p class="work_p">Собираем главы. Встречаемся раз- два в неделю или присылаем отчёты раз в неделю.</p>
                                 </div>
                             </div>
                         </div>
@@ -343,7 +350,7 @@
                                 <div class="we-work__img" style='background-image: url("img/5-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Рукопись</h3>
-                                    <p class="work_p">Редактируем. Корректируем.</p>
+                                    <p class="work_p">Радуемся! Редактируем. Согласовываем. Корректируем.</p>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +359,7 @@
                                 <div class="we-work__img" style='background-image: url("img/6-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Верстка</h3>
-                                    <p class="work_p">Создаем дизайн-макет. Готовим и «упаковываем» заявки в издательства.</p>
+                                    <p class="work_p">Одеваем рукопись в обложку: создаём дизайн.</p>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +372,7 @@
                                 <div class="we-work__img" style='background-image: url("img/7-we-work.png")'></div>
                                 <div class="we-work__txt">
                                     <h3 class="h3">Издание</h3>
-                                    <p class="work_p">Отправляем заявки в издетельства. Юридически сопровождаем автора в издательстве.</p>
+                                    <p class="work_p">Формируем и отправляем заявки в издательства, размещаем на платформах, публикуем в журналах. Юридически сопровождаем все сделки.</p>
                                 </div>
                             </div>
                         </div>
@@ -398,9 +405,10 @@
             </div>
 
             <div class="col w50">
-                <div class="wrapper-text top-padd-96">
+                <div class="text_mw480 wrapper-text top-padd-96">
                     <p class="top-text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Об агентстве</p>
                     <h2 class="h2 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Альма-матер для <br>современных авторов</h2>
+                    <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Мы решили создать место, куда можно прийти с любой литературной проблемой и получить решение.</p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Wine&Prose не просто редакция из критиков, писателей, агентов и корректоров, мы - сообщество влюбленных в литературу людей.</p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">И наша миссия - помогать авторам писать действительно хорошие книги. Потому что мы верим: с каждой такой книгой мир становится лучше.</p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Один автор издает книгу - Миллионы людей находят важные ответы - Общество становится счастливие.</p>
@@ -427,13 +435,13 @@
                 </div>
             </div>
             <div class="col w50">
-                <div class="wrapper-text top-padd-96">
+                <div class="text_mw480 wrapper-text top-padd-96">
                     <p class="top-text wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">Основатель агентства</p>
                     <h2 class="h2 wow fadeInRight" data-wow-duration="1.4s" data-wow-delay=".6s">Александра Гылка</h2>
-                    <p class=" wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Писатель, сценарист, автор научной работы о кинотерапии в документальных сценариях.</p>
+                    <p class=" wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Писатель, сценарист, автор научной работы о кинотерапии в сценариях документальных фильмов.</p>
                     <p class=" wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Выпускница МГУ им. М.В. Ломоносова (факультет журналистики), Литературного Института им. А.М. Горького (факультет прозы).</p>
-                    <p class=" wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s">Работала над проектами в СТС медиа, ТАСС, частных кинокомпаниях и издательствах.</p>
-                    <a href="https://instagram.com/alex.gylka" class="white-button wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">Личный блог</a>
+                    <p class=" wow fadeInRight" data-wow-duration="1.3s" data-wow-delay=".8s"> Работала над проектами в СТС медиа, ТАСС, частных кинокомпаниях и издательствах.</p>
+                    <a href="https://instagram.com/alex.gylka" target="_blank" class="white-button wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">Личный блог</a>
                 </div>
                 <span class="namber-page">13</span>
             </div>
@@ -443,10 +451,10 @@
 
         <div id="reviews_anchor" class="flex-container">
             <div class="col w50">
-                <div class="wrapper-text top-padd-96 feedback-color give_feedback__modal">
+                <div class="text_mw480 wrapper-text top-padd-96 feedback-color give_feedback__modal">
                     <p class="top-text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Отзывы</p>
                     <h2 class="h2 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Мы ценим своих авторов, а они нас</h2>
-                    <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">апиши нам пару строк: что понравилось, а что мы могли бы улучшить в своей работе?  </p>
+                    <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Напиши нам пару строк: что понравилось, а что мы могли бы улучшить в своей работе? </p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Больше отзывов ты сможешь найти в наших социальных сетях.</p>
                     <a class="white-button wow fadeInLeft give_feedback" data-wow-duration="1.2s" data-wow-delay=".9s">Оставить отзыв</a>
                     <span class="namber-page left-side">14</span>
@@ -502,7 +510,7 @@
 
         <div class="flex-container">
             <div class="col w50">
-                <div class="wrapper-text social-fon">
+                <div class="text_mw320 wrapper-text social-fon">
                     <h2 class="h2 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">Vine&Prose</br>
                     В социальных сетях
                     </h2>
@@ -522,7 +530,7 @@
 
             </div>
             <div class="col w50">
-                <div class="wrapper-text cooperation-fon">
+                <div class="text_mw320 wrapper-text cooperation-fon">
                     <h2 class="h2 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s"v>Есть интересные идеи сотрудничества?</h2>
                     <p class=" wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">Давай обсудим! <br>Свяжись с нами, и мы обязательно <br>что-то придумаем.</p>
                     <a class="pink-button wow fadeInUp how_connect" data-wow-duration="1.5s" data-wow-delay=".5s">Связаться</a>
@@ -556,7 +564,7 @@
                 <a class="choose-sevice take_service_inner">Выбрать услугу</a>
             </div>
 
-            <p class="form_info">Нажимая кнопку “Оставить заявку” вы даете согласие на обработку своих персональных данных в соответствии с <a class="polit_conf polit_conf_in_modal">Политикой конфиденциальности<a></p>
+            <p class="form_info">Нажимая кнопку “Оставить заявку” вы даете согласие на обработку своих персональных данных в соответствии с <a href="http://wineandprose.ru/privacy_policy.php" target="_blank" class="polit_conf_in_modal">Политикой конфиденциальности</a></p>
 
         </form>
         <div class="modal_bt_bl"></div>
@@ -568,10 +576,12 @@
 <div class="modal__wrapper hidden how_connect__modal">
     <div data-simplebar class="modal_center__container">
         <div class="button_close">Закрыть <i class="close-icon"></i></div>
-        <h2 class="h2">Как ты хочешь<br> с нами связаться?</h2>
+        <h2 class="h2"> Как тебе удобнее<br> связаться с нами?</h2>
+        <p class="modal_text">Оставь заявку, и мы обсудим все литературные нюансы.</p>
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="modal_bt_bl"></div>
     </div>
@@ -601,7 +611,9 @@
                 <button id="feedback_submit_2" class="submit form__pink-button block-center">Получить бесплатно</button>
             </div>
 
-            <p class="form_info">Нажимая кнопку “Получить бесплатно” вы даете согласие на обработку своих персональных данных в соответствии с <a class="polit_conf polit_conf_in_modal">Политикой конфиденциальности</a></p>
+
+            <p class="form_info">Нажимая кнопку “Оставить заявку” вы даете согласие на обработку своих персональных данных в соответствии с <a href="http://wineandprose.ru/privacy_policy.php" target="_blank" class="polit_conf_in_modal">Политикой конфиденциальности</a></p>
+
 
         </form>
         <div class="modal_bt_bl"></div>
@@ -636,7 +648,7 @@
                 <button id="feedback_submit_3" class="submit form__pink-button block-center">Оставить отзыв</button>
             </div>
 
-            <p class="form_info">Нажимая кнопку “Получить бесплатно” вы даете согласие на обработку своих персональных данных в соответствии с <a class="polit_conf polit_conf_in_modal">Политикой конфиденциальности</a></p>
+            <p class="form_info">Нажимая кнопку “Оставить заявку” вы даете согласие на обработку своих персональных данных в соответствии с <a href="http://wineandprose.ru/privacy_policy.php" target="_blank" class="polit_conf_in_modal">Политикой конфиденциальности</a></p>
 
         </form>
         <div class="modal_bt_bl"></div>
@@ -678,11 +690,12 @@
     <div data-simplebar class="modal_center__container right_stuck_modal full_width">
         <div class="head_modal_service">
             <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <h2 class="h2">Литература мама</h2>
+            <h2 class="h2">Литературная мама</h2>
             <p class="modal_text">Личный коучинг автора.</p>
         </div>
 
-        <div class="img_in_modal" style="background-image: url('img/lit-mama-modal.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/lit-mama-modal.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/lit-mama-modal_mob.png')"></div>
 
         <div class="body_modal_service">
             <h3 class="h3">Для кого?</h3>
@@ -723,36 +736,36 @@
                     <h3 class="h3">Художественная литература</h3>
                     <p class="subtitle">Жанровая (детектив, любовный роман, исторический роман, фантастика, фэнтези и др.)</p>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Художественная литература. 100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">50 стр. / 1 мес. </span><span class="book_price">$700</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">50 стр. / 1 мес. </span><span class="book_price">$700</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Художественная литература. 200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$1190</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$1190</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Художественная литература. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">200 стр. / 3 мес.</span><span class="book_price">$2080</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">200 стр. / 3 мес.</span><span class="book_price">$2080</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Художественная литература. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">300 стр. / 6 мес.</span><span class="book_price">$2890</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">300 стр. / 6 мес.</span><span class="book_price">$2890</span></p></label>
                 </div>
                 <div class="wrapper_janr">
                     <p class="subtitle">Мейнстрим (смесь жанров) и Интеллектуальная проза</p>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Простые жанры. 100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">50 стр. /1,5 мес.</span><span class="book_price">$810</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">50 стр. /1,5 мес.</span><span class="book_price">$810</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Простые жанры. 200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 3 мес.</span><span class="book_price">$1560</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 3 мес.</span><span class="book_price">$1560</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Простые жанры. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">200 стр. / 6 мес.</span><span class="book_price">$2890</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">200 стр. / 6 мес.</span><span class="book_price">$2890</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Простые жанры. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">300 стр. / 8 мес.</span><span class="book_price">$3590</span></p></label>
+                    <label><input type="radio" name="lit-mama-hd" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">300 стр. / 8 мес.</span><span class="book_price">$3590</span></p></label>
                 </div>
                 <div class="wrapper_janr">
                     <h3 class="h3">Нон-фикшн</h3>
                     <p class="subtitle">Нехудожественная литература (биографии, мемуары, бизнес, и др.)</p>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Нон-фикшн. 100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">50 стр. / 1 мес.</span><span class="book_price">$1090</span></p></label>
+                    <label><input type="radio" name="lit-mama-nf" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">50 стр. / 1 мес.</span><span class="book_price">$1090</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Нон-фикшн. 200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$1480</span></p></label>
+                    <label><input type="radio" name="lit-mama-nf" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$1480</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Нон-фикшн. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$1860</span></p></label>
+                    <label><input type="radio" name="lit-mama-nf" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$1860</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="Нон-фикшн. 300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$3680</span></p></label>
+                    <label><input type="radio" name="lit-mama-nf" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$3680</span></p></label>
                 </div>
                 <h3 class="h3">В стоимость пакета услуги «Литературная мама» включено:</h3>
                 <ul>
@@ -785,7 +798,8 @@
             <p class="modal_text">Оформим твои мысли на бумаге.</p>
         </div>
 
-        <div class="img_in_modal" style="background-image: url('img/dobr_prizrak.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/dobr_prizrak.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/dobr_prizrak_mob.png')"></div>
 
         <div class="body_modal_service">
             <h3 class="h3">Для кого?</h3>
@@ -837,21 +851,21 @@
                     <h3 class="h3">Нон-фикшен</h3>
                     <p class="subtitle">Автобиографии, Мемуары, Биографии</p>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$3680</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$3680</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$4980</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$4980</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$8690</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$8690</span></p></label>
 
                     </div>
                 <div class="wrapper_janr">
                     <p class="subtitle">Бизнес и финансы, Мода, Саморазвитие</p>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="100 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$4890</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$4890</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="200 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$7380</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">200 стр. / 2 мес.</span><span class="book_price">$7380</span></p></label>
 
-                    <label><input type="checkbox" class="chekbox_rd_button" value="300 стр. / 1,5 месяца - 123 456 руб."> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$8690</span></p></label>
+                    <label><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">300 стр. / 4 мес.</span><span class="book_price">$8690</span></p></label>
                 </div>
 
                 <h3 class="h3">В стоимость пакета услуги «Добрый призрак» включено:</h3>
@@ -887,7 +901,8 @@
             <p class="modal_text_price">$3 — 1000 знаков</p>
         </div>
 
-        <div class="img_in_modal" style="background-image: url('img/red-rukop.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/red-rukop.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/red-rukop_mob.png')"></div>
 
         <div class="body_modal_service">
             <p>Литературный редактор — это первый читатель, своего рода «профессиональный критик», который поможет автору ответить на вопрос: «А всё ли понятно в моей рукописи?».</p>
@@ -929,7 +944,8 @@
             <p class="modal_text_price">$2 — 1000 знаков</p>
         </div>
 
-        <div class="img_in_modal" style="background-image: url('img/kor_rukop.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/kor_rukop.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/kor_rukop_mob.png')"></div>
 
         <div class="body_modal_service">
             <p>Пушкин и Гоголь допускали ошибки в своих рукописях, но давайте не будем стремиться в этом быть на них похожими. Вообще ни на кого не нужно стремиться быть похожим! Пушкин и Гоголь уже есть, литературе нужны новые лица!</p>
@@ -971,7 +987,8 @@
         </div>
 
 
-        <div class="img_in_modal" style="background-image: url('img/konsalt.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/konsalt.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/konsalt_mob.png')"></div>
 
         <div class="body_modal_service">
             <p>У тебя уже есть рукопись? Или ты только собираешься начать свой путь в литературе? Мы разберем конкретно твою ситуацию и дадим рекомендации, ответим на вопросы: «что делать?», «куда идти?», «как и где публиковаться?»... Литературный редактор проанализирует твои тексты, укажет на недочёты и расскажет как именно их исправить.</p>
@@ -1021,7 +1038,8 @@
         </div>
 
 
-        <div class="img_in_modal" style="background-image: url('img/agent-ruk.png')"></div>
+        <div class="img_in_modal hide-max-580" style="background-image: url('img/agent-ruk.png')"></div>
+        <div class="img_in_modal hide-min-581" style="background-image: url('img/agent-ruk_mob.png')"></div>
 
         <div class="body_modal_service">
             <p>Твоя задача — писать хорошие тексты, задача агента — их продвигать. Тандем автора и агента зачастую выливается в надпись «бестселлер» на обложке.</p>
@@ -1063,13 +1081,14 @@
 
 <div class="modal__wrapper hidden take_question__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal">
-        <div class="button_close_st2">Закрыть <i class="close-icon"></i> </div>
+        <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <div class="button_prev_modal_st2"><i class="back-icon"></i> Назад</div>
         <h2 class="h2">Остались вопросы? Ответим на все.</h2>
         <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="mb-desc-120"></div>
     </div>
@@ -1077,13 +1096,14 @@
 
 <div class="modal__wrapper hidden make_question_last__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal">
-        <div class="button_close_st4">Закрыть <i class="close-icon"></i> </div>
+        <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
         <h2 class="h2">Остались вопросы? Ответим на все.</h2>
         <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="mb-desc-120"></div>
     </div>
@@ -1102,16 +1122,23 @@
 
         <div class="body_modal">
             <div class="modal_wrapper_service">
-                <div class="modal_img_service" style="background: url('img/1-service.png')"></div>
+
+                <div class="modal_img_service hide-max-580" style="background: url('img/1-service.png')"></div>
+                <div class="modal_img_service hide-min-581" style="background: url('img/1-service_mob.png')"></div>
+
+
                 <div class="modal_text_service">
-                    <h3 class="h3">Литература мама</h3>
-                    <p>Консультируем и сопровождаем авторов <br>от идеи до результата.</p>
+                    <h3 class="h3">Литературная мама</h3>
+                    <p>Консультируем и сопровождаем авторов от идеи до результата.</p>
                     <div class="price">от $700</div>
                     <a class="more lit_mama_inner">Выбрать</a>
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service" style="background: url('img/2-service.png')"></div>
+
+                <div class="modal_img_service hide-max-580" style="background: url('img/2-service.png')"></div>
+                <div class="modal_img_service hide-min-581" style="background: url('img/2-service_mob.png')"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Добрый призрак</h3>
                     <p>Для того, кто гений в другой области. Специально обученные филологи напишут книгу за тебя. Не отвлекайся от свершений.</p>
@@ -1120,7 +1147,10 @@
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/redactura_main_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/redactura_main_mod.png'); background-color: #f9f2eb;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/redactura_main_mob.png'); background-color: #f9f2eb;"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Редактура рукописи</h3>
                     <p>Пробираемся даже там, где чёрт сломит ногу.</p>
@@ -1129,7 +1159,10 @@
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/correctura_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/correctura_mod.png'); background-color: #e6c7b3;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/correctura_mob.png'); background-color: #e6c7b3;"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Корректура рукописи</h3>
                     <p>Ни одна запятая не уйдёт</p>
@@ -1138,7 +1171,10 @@
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/consultation_main_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/consultation_main_mod.png'); background-color: #e6c7b3;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/consultation_main_mob.png'); background-color: #e6c7b3;"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Консультация рукописи</h3>
                     <p>Выбираем вектор развития</p>
@@ -1147,7 +1183,10 @@
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/literature_agent_main_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/literature_agent_main_mod.png'); background-color: #f9f2eb;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/literature_agent_main_mob.png'); background-color: #f9f2eb;"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Литературный агент</h3>
                     <p>А ты точно продюсер?</p>
@@ -1160,7 +1199,7 @@
         <div class="footer_modal">
             <h3 class="h3">Я не знаю что мне нужно</h3>
             <p>Проконсультируем и поможем с выбором</p>
-            <a class="more take_question">Попросить консультацию</a>
+            <a class="more take_question">Попросить помощь</a>
             <div class="pb-20"></div>
         </div>
 
@@ -1173,9 +1212,10 @@
     <div data-simplebar class="modal_choose_service">
 
         <div class="header-modal">
-            <div class="button_close_st3">Закрыть <i class="close-icon"></i> </div>
+            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
             <div class="button_prev_modal_st3"><i class="back-icon"></i> Назад</div>
-            <h2 class="h2">Выбрать дополнительные услуги</h2>
+            <h2 class="h2">Дополнительные услуги</h2>
+            <p>Нужны ли вам доп услуги?</p>
         </div>
 
         <div class="body_modal">
@@ -1198,7 +1238,10 @@
                 <!--</div>-->
             <!--</div>-->
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/consultation_main_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/consultation_main_mod.png'); background-color: #E6C7B3;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/consultation_main_mob.png');"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Консультация рукописи</h3>
                     <p>Выбираем вектор развития</p>
@@ -1207,7 +1250,10 @@
                 </div>
             </div>
             <div class="modal_wrapper_service">
-                <div class="modal_img_service bg_size_dop_service" style="background: url('img/literature_agent_main_mod.png')"></div>
+
+                <div class="modal_img_service bg_size_dop_service hide-max-580" style="background: url('img/literature_agent_main_mod.png'); background-color:#F9F2EB;"></div>
+                <div class="modal_img_service bg_size_dop_service hide-min-581" style="background: url('img/literature_agent_main_mob.png');"></div>
+
                 <div class="modal_text_service">
                     <h3 class="h3">Литературный агент</h3>
                     <p>А ты точно продюсер?</p>
@@ -1224,7 +1270,7 @@
         <div class="footer_modal">
             <h3 class="h3">Я не знаю что мне нужно</h3>
             <p>Проконсультируем и поможем с выбором</p>
-            <a class="more make_question_last">Попросить консультацию</a>
+            <a class="more make_question_last">Попросить помощь</a>
             <div class="pb-20"></div>
         </div>
 
@@ -1236,12 +1282,12 @@
 <div class="modal__wrapper hidden take_order__modal">
     <div data-simplebar class="modal_choose_service">
         <div class="header-modal">
-            <div class="button_close_st4">Закрыть <i class="close-icon"></i></div>
+            <div class="button_close">Закрыть <i class="close-icon"></i></div>
             <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
             <h2 class="h2">Оставить заявку</h2>
         </div>
         <div class="order_result">
-           <!-- <p><span>Услуга:</span> Литература мама</p>
+           <!-- <p><span>Услуга:</span> Литературная мама</p>
             <p><span>Жанр:</span> Художественная литература (сложные жанры)</p>
             <p><span>Кол-во страниц:</span> 100 страниц</p>
             <p><span>Стоимость:</span> 123 456 руб.</p>
@@ -1269,11 +1315,13 @@
                     <!--<input type="checkbox" checked> Еще мне нужна консультация-->
                 </label>
                 <div class="form__button-wrapper">
-                    <button id="feedback_submit_order" class="submit form__pink-button block-center">Получить бесплатно</button>
+                    <button id="feedback_submit_order" class="submit form__pink-button block-center">Оставить заявку</button>
                     <!--<a href="#" class="choose-sevice">Выбрать услугу</a>-->
                 </div>
 
-                <p class="form_info">Нажимая на кнопку "Оставить заявку" вы даёте согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
+
+                <p class="form_info">Нажимая кнопку “Оставить заявку” вы даете согласие на обработку своих персональных данных в соответствии с <a href="http://wineandprose.ru/privacy_policy.php" target="_blank" class="polit_conf_in_modal">Политикой конфиденциальности</a></p>
+
             </form>
             <div class="pb-20"></div>
         </div>

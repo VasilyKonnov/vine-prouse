@@ -25,9 +25,11 @@
     <a class="scrollLink" href="http://wineandprose.ru/#reviews_anchor">Отзывы</a>
     <a class="scrollLink" href="http://wineandprose.ru/#blog_anchor">Блог</a>
     <div class="sicial-icon-mob-menu">
-        <p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>
-        <p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>
-        <p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>
+
+        <bitton class="pink-button how_connect">Связаться</bitton>
+<!--        <p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>-->
+<!--        <p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>-->
+<!--        <p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>-->
     </div>
 </div>
 <header id="header" class="header show">
@@ -90,6 +92,7 @@
             <a href="tel:+79645154789" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
             <a href="https://msng.link/wa/79645154789" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
             <a href="https://msng.link/vi/79645154789" class="choose_connect viber-icon">Написать в Viber</a>
+            <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
             <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         </div>
     </div>
