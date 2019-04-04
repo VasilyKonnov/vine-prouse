@@ -231,8 +231,8 @@ try {
     $mail->setFrom('wineandprose@wineandprose.ru', 'Сайт Wine&Prose');
 
     $mail->addAddress('vasiliy.konnov@gmail.com');     // Add a recipient
-//    $mail->addAddress('vasily.konnov@yandex.ru');     // Add a recipient
-//    $mail->addAddress('alexmase21@yandex.ru');     // Add a recipient
+    $mail->addAddress('hello@wineandprose.ru');     // Add a recipient
+    $mail->addAddress('alexmase21@yandex.ru');     // Add a recipient
 
 // Add a recipient
 

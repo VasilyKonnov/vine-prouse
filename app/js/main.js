@@ -54,7 +54,7 @@ $(document).ready(function(){
     }
     autoType(".type-js", 150);
 
-$(".phone_mask").inputmask({"mask": "+7 (999) 99-99-999"});
+$(".phone_mask").inputmask({"mask": "+7 (999) 999 99 99"});
 
 //console.log($('body').width());
 

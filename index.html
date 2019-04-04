@@ -21,7 +21,7 @@
 <body class="body load">
 <div class="menu-mobile">
     <a class="scrollLink close_mob_menu" href="#service_anchor">Услуги</a>
-    <a class="scrollLink close_mob_menu" href="#company_anchor">Об агенстве</a>
+    <a class="scrollLink close_mob_menu" href="#company_anchor">Об агентстве</a>
     <a class="scrollLink close_mob_menu" href="#reviews_anchor">Отзывы</a>
     <a class="scrollLink close_mob_menu" href="#blog_anchor">Блог</a>
     <div class="sicial-icon-mob-menu">
@@ -43,7 +43,7 @@
             </div>
             <nav class="main-menu">
                 <a class="scrollLink" href="#service_anchor">Услуги</a>
-                <a class="scrollLink" href="#company_anchor">Об агенстве</a>
+                <a class="scrollLink" href="#company_anchor">Об агентстве</a>
                 <a class="scrollLink" href="#reviews_anchor">Отзывы</a>
                 <a class="scrollLink" href="#blog_anchor">Блог</a>
             </nav>
@@ -55,9 +55,9 @@
                 </span>
             </a>
             <div class="callback-header">
-                <!--<a href="#" class="vk vk-header"></a>-->
-                <button class="header-button how_connect">Связаться с нами</button>
-                <a href="https://www.instagram.com/wine_and_prose/" target="_blank" class="inst-header"><img src="/img/instagram.svg" alt=""><span class="inst-text">Наш инстаграмм</span></a>
+                <a href="https://www.instagram.com/wine_and_prose/" class="inst inst-header"></a>
+                <a href="https://vk.com/wine_and_prose" class="vk vk-header"></a>
+                <a class="header-button how_connect">Связаться с нами</a>
             </div>
         </div>
     </header>
@@ -511,8 +511,8 @@
         <div class="flex-container">
             <div class="col w50">
                 <div class="text_mw320 wrapper-text social-fon">
-                    <h2 class="h2 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">Vine&Prose<br>
-                    В социальных сетях
+                    <h2 class="h2 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">Wine&Prose<br>
+                    в социальных сетях
                     </h2>
 
                     <p class=" wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">Авторы всего мира, объединяйтесь!</p>
@@ -581,8 +581,8 @@
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
-        <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="modal_bt_bl"></div>
     </div>
 </div>
@@ -918,7 +918,7 @@
                 </li>
             </ul>
 
-            <h3 class="h3">Оставь заявку и мы проконсультируем об услуге.</h3>
+            <h3 class="h3">Оставь заявку, и мы проконсультируем об услуге.</h3>
             <div class="form__button-wrapper block-center">
                 <button class="submit take_order form__pink-button">Оформить заявку</button>
                 <button class="have_question make_question">У меня есть вопросы</button>
@@ -959,7 +959,7 @@
 
             <p>Зачем брать на себя такие риски, если профессионалы своего дела вычитают и оформят рукопись по стандартам русского языка. Пушкин и Гоголь точно к нам бы обратились.</p>
 
-            <h3 class="h3">Оставь заявку и мы проконсультируем об услуге.</h3>
+            <h3 class="h3">Оставь заявку, и мы проконсультируем об услуге.</h3>
 
             <div class="form__button-wrapper block-center">
                 <button class="submit take_order form__pink-button">Оформить заявку</button>
@@ -1008,7 +1008,7 @@
 
             <p>Если рукопись превышает объем 2 авторских листа (80.000 знаков), то стоимость услуги увеличивается до $200.</p>
 
-            <h3 class="h3">Оставь заявку и мы проконсультируем об услуге.</h3>
+            <h3 class="h3">Оставь заявку, и мы проконсультируем об услуге.</h3>
 
             <div class="form__button-wrapper block-center">
                 <button class="submit  take_order form__pink-button">Оформить заявку</button>
@@ -1061,7 +1061,7 @@
 
             <p><b>Важно! Мы продвигаем не всех авторов, необходимо пройти конкурс.</b></p>
 
-            <h3 class="h3">Оставь заявку и мы проконсультируем об услуге.</h3>
+            <h3 class="h3">Оставь заявку, и мы проконсультируем об услуге.</h3>
 
             <div class="form__button-wrapper block-center">
                 <button class="submit take_order form__pink-button">Оформить заявку</button>
@@ -1084,8 +1084,8 @@
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
-        <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="mb-desc-120"></div>
     </div>
 </div>
@@ -1099,8 +1099,8 @@
         <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
         <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
         <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
-        <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         <div class="mb-desc-120"></div>
     </div>
 </div>

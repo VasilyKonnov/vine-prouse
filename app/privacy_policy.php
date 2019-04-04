@@ -21,7 +21,7 @@
 <body class="body load">
 <div class="menu-mobile">
     <a class="scrollLink" href="https://wineandprose.ru/#service_anchor">Услуги</a>
-    <a class="scrollLink" href="https://wineandprose.ru/#company_anchor">Об агенстве</a>
+    <a class="scrollLink" href="https://wineandprose.ru/#company_anchor">Об агентстве</a>
     <a class="scrollLink" href="https://wineandprose.ru/#reviews_anchor">Отзывы</a>
     <a class="scrollLink" href="https://wineandprose.ru/#blog_anchor">Блог</a>
     <div class="sicial-icon-mob-menu">
@@ -36,11 +36,13 @@
 <header id="header" class="header show">
     <div id="nav_scroll" class="header-wrapper">
         <div class="logo">
-            <img src="img/logo.svg" alt="">
+            <a href="/">
+                <img src="img/logo.svg" alt="">
+            </a>
         </div>
         <nav class="main-menu">
             <a class="scrollLink redit_service_anchor" href="https://wineandprose.ru/#service_anchor">Услуги</a>
-            <a class="scrollLink redit_company_anchor" href="https://wineandprose.ru/#company_anchor">Об агенстве</a>
+            <a class="scrollLink redit_company_anchor" href="https://wineandprose.ru/#company_anchor">Об агентстве</a>
             <a class="scrollLink redit_reviews_anchor" href="https://wineandprose.ru/#reviews_anchor">Отзывы</a>
             <a class="scrollLink" href="https://instagram.com/alex.gylka">Блог</a>
         </nav>
@@ -52,9 +54,9 @@
             </span>
         </a>
         <div class="callback-header">
-            <!--<a href="#" class="vk vk-header"></a>-->
+            <a href="https://www.instagram.com/wine_and_prose/" class="inst inst-header"></a>
+            <a href="https://vk.com/wine_and_prose" class="vk vk-header"></a>
             <a class="header-button how_connect">Связаться с нами</a>
-            <a href="https://www.instagram.com/wine_and_prose/" target="_blank" class="inst-header"><img src="/img/instagram.svg" alt=""><span class="inst-text">Наш инстаграмм</span></a>
         </div>
     </div>
 </header>
@@ -132,8 +134,8 @@
             <a href="tel:+79645154789" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
             <a href="https://msng.link/wa/79645154789" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
             <a href="https://msng.link/vi/79645154789" class="choose_connect viber-icon">Написать в Viber</a>
+            <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
             <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
-            <!--<a href="https://msng.link/vk/iam_mase" class="choose_connect vk-icon">Написать в Vk</a>-->
         </div>
     </div>
 
