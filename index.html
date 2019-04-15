@@ -29,9 +29,17 @@
         <button class="pink-button how_connect">Связаться</button>
 
 
+        <div class="callback-header-mob">
+
+            <a href="https://vk.com/wine_and_prose" class="vk vk-header"></a>
+            <a href="https://www.instagram.com/wine_and_prose/" class="inst inst-header"></a>
+
+        </div>
+
         <!--<p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>-->
         <!--<p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>-->
         <!--<p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>-->
+
     </div>
 </div>
     <header id="header" class="header show">
@@ -73,7 +81,7 @@
                         <h1 class="h1 text-js">Помогаем авторам писать бестселлеры</h1>
                     </div>
                     <p class="p">Потому что с каждой книгой<br> мир становится лучше</p>
-                    <button class="pink-button write_book">Написать книгу</button>
+                    <button class="pink-button write_book">Стать автором</button>
                 </div>
             </div>
             <div class="col w50">
@@ -255,7 +263,7 @@
                 <div class="wrapper-text height-616">
                     <h2 class="h2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Чек-лист «Как написать книгу и не сойти с ума»</h2>
                     <p class="p wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Лайфхаки для молодых авторов и не только. Бесплатно расскажем с чего начать, на что обратить внимание и как не совершить самые распространенные ошибки.</p>
-                    <p class="p wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Отправим на email. Бесплатно и быстро.</p>
+                    <!--<p class="p wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Отправим на email. Бесплатно и быстро.</p>-->
                     <button class="pink-button wow fadeInLeft take_check-list" data-wow-duration="1.3s" data-wow-delay=".8s">Получить бесплатно</button>
                 </div>
             </div>
@@ -293,7 +301,7 @@
 <!-- 8 блок -->
 
         <div class="how-we-work-wrapper request-color">
-            <h2 class="h2">Что происходит после заявки</h2>
+            <h2 class="h2">Какие этапы проходит рукопись?</h2>
             <div class="flex-container">
                 <div class="col w50">
                     <div class="flex-wrapper">
@@ -379,7 +387,7 @@
                             <div class="how-we-work-item wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.1s">
                                 <div class="we-work__txt deck-pt-150">
                                     <h3 class="h3">А не написать ли мне вторую книгу?</h3>
-                                    <button class="pink-button take_service">Написать книгу</button>
+                                    <button class="pink-button take_service">Стать автором</button>
                                 </div>
                             </div>
                         </div>
@@ -406,7 +414,7 @@
             <div class="col w50">
                 <div class="text_mw480 wrapper-text top-padd-96">
                     <p class="top-text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">Об агентстве</p>
-                    <h2 class="h2 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Альма-матер для <br>современных авторов</h2>
+                    <h2 class="h2 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay=".6s">Альма-Матер для <br>современных авторов</h2>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Мы решили создать место, куда можно прийти с любой литературной проблемой и получить решение.</p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">Wine&Prose не просто редакция из критиков, писателей, агентов и корректоров, мы - сообщество влюбленных в литературу людей.</p>
                     <p class=" wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".8s">И наша миссия - помогать авторам писать действительно хорошие книги. Потому что мы верим: с каждой такой книгой мир становится лучше.</p>
@@ -578,10 +586,10 @@
         <div class="button_close">Закрыть <i class="close-icon"></i></div>
         <h2 class="h2"> Как тебе удобнее<br> связаться с нами?</h2>
         <p class="modal_text">Оставь заявку, и мы обсудим все литературные нюансы.</p>
-        <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-        <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-        <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
-        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
+        <a href="tel:+79262777331" class="choose_connect phone-icon">Позвонить +7 (926) 277 73 31</a>
+        <a href="https://msng.link/wa/79262777331" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
+        <a href="https://msng.link/vi/79262777331" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в VK</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <div class="modal_bt_bl"></div>
     </div>
@@ -593,7 +601,7 @@
     <div data-simplebar class="modal_center__container">
         <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <h2 class="h2">Получить чек-лист</h2>
-        <p class="modal_text">Заполни форму и мы сразу отправим чек-лист тебе на e-mail. Бесплатно и быстро.</p>
+        <p class="modal_text">Заполни форму ниже, и мы отправим тебе чек-лист на e-mail</p>
         <form id="check_list_form" onsubmit="return false;">
             <label class="field">
                 <input type="text" name="name" required class="input-text placeholder validate" data-validate="required" data-placeholder="Имя">
@@ -622,7 +630,7 @@
     <div data-simplebar class="modal_center__container feedback_modal">
         <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <h2 class="h2">Оставить отзыв</h2>
-        <p class="modal_text">Заполни форму и после прочтения мы опубликуем твой отзыв</p>
+        <p class="modal_text">Заполни форму, и после прочтения, мы опубликуем твой ответ.</p>
         <form id="give_feedback_form" onsubmit="return false;">
             <label class="field">
                 <input type="text" required name="name" class="input-text placeholder validate" data-validate="required" data-placeholder="Имя">
@@ -685,9 +693,13 @@
 <div class="modal__wrapper hidden lit_mama__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal full_width">
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            </div>
+
             <h2 class="h2">Литературная мама</h2>
-            <p class="modal_text">Личный коучинг автора.</p>
+            <p class="modal_text">Персональный коучинг автора.</p>
         </div>
 
         <div class="img_in_modal hide-max-580" style="background-image: url('img/lit-mama-modal.png')"></div>
@@ -703,6 +715,9 @@
                     <p>Ты знаешь как писать, и даже твои посты в “Фейсбуке” набирают лайки, но книга «почему-то не идёт»: персонажи тусклые, логика повествования нарушена, — настроение бросить эту затею.</p>
                 </li>
                 <li>
+                    <p>Ты написал рукопись. Может быть, даже отправил в издательства, но книга не увидела свет. Нет, «там» не всё куплено.</p>
+                </li>
+                <li>
                     <p>Ты мечтаешь стать автором, Писателем XXI века. На вопросы «Куда идти?» и «Что делать?» Google не дал ответа.</p>
                 </li>
             </ul>
@@ -711,6 +726,7 @@
             <p>Наши эксперты разберут конкретно твою ситуацию и приведут от идеи к готовой книге в обложке. Да-да, литературный агент — мамочка. С момента заявки мы поведём тебя за руку к Литературе.</p>
 
             <h3 class="h3">Как?</h3>
+            <p> Если муза не идёт к тебе, придёт литературный редактор.</p>
             <ul>
                 <li>
                     <p>На первой встрече определим цель книги, каналы дистрибуции (издательства/платформы), сроки. Выберем жанр и пропишем черновые главы. Расскажем как писать и с чего начать в первую очередь, поделимся авторскими методиками работы с текстом.</p>
@@ -753,7 +769,7 @@
                 </div>
                 <div class="wrapper_janr">
                     <h3 class="h3">Нон-фикшн</h3>
-                    <p class="subtitle">Нехудожественная литература (биографии, мемуары, бизнес, и др.)</p>
+                    <p class="subtitle">Нехудожественная литература (биографии, мемуары, бизнес и др.)</p>
 
                     <div><input type="radio" name="lit-mama-nf" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">50 стр. / 1 мес.</span><span class="book_price">$1090</span></p></div>
 
@@ -789,7 +805,9 @@
 <div class="modal__wrapper hidden good_ghost__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal full_width">
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            </div>
             <h2 class="h2">Добрый призрак</h2>
             <p class="modal_text">Оформим твои мысли на бумаге.</p>
         </div>
@@ -844,7 +862,7 @@
             <form action="#" onsubmit="return false;">
 
                 <div class="wrapper_janr">
-                    <h3 class="h3">Нон-фикшен</h3>
+                    <h3 class="h3">Нон-фикшн</h3>
                     <p class="subtitle">Автобиографии, Мемуары, Биографии</p>
 
                     <div><input type="radio" name="dobr_prizrak" class="chekbox_rd_button"> <p class="work_price"><span class="book_content">100 стр. / 1,5 мес.</span><span class="book_price">$3680</span></p></div>
@@ -868,7 +886,7 @@
 
                 <ul>
                     <li>
-                        <p>Литературное редактирование рукописи/p>
+                        <p>Литературное редактирование рукописи</p>
                     </li>
                     <li>
                         <p>Корректура рукописи</p>
@@ -891,7 +909,9 @@
 <div class="modal__wrapper hidden script_editor__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal full_width">
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть<i class="close-icon"></i></div>
+            </div>
             <h2 class="h2">Редактура рукописи</h2>
             <p class="modal_text">Пробираемся даже там, где чёрт сломит ногу.</p>
             <p class="modal_text_price">$3 — 1000 знаков</p>
@@ -934,7 +954,9 @@
     <div data-simplebar class="modal_center__container right_stuck_modal  full_width">
 
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            </div>
             <h2 class="h2">Корректура рукописи</h2>
             <p class="modal_text">Ни одна запятая не уйдёт</p>
             <p class="modal_text_price">$2 — 1000 знаков</p>
@@ -976,7 +998,9 @@
 <div class="modal__wrapper hidden script_consult__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal  full_width">
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i></div>
+            </div>
             <h2 class="h2">Консультация рукописи</h2>
             <p class="modal_text">Выбираем вектор развития</p>
             <p class="modal_text_price">от $110</p>
@@ -1027,12 +1051,13 @@
 <div class="modal__wrapper hidden lit_agent__modal">
     <div data-simplebar class="modal_center__container right_stuck_modal full_width">
         <div class="head_modal_service">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i></div>
+            </div>
             <h2 class="h2">Литературный агент</h2>
             <p class="modal_text">А ты точно продюсер?</p>
             <p class="modal_text_price">от $110</p>
         </div>
-
 
         <div class="img_in_modal hide-max-580" style="background-image: url('img/agent-ruk.png')"></div>
         <div class="img_in_modal hide-min-581" style="background-image: url('img/agent-ruk_mob.png')"></div>
@@ -1047,7 +1072,7 @@
                     <p>“Упаковывает” заявки в издательства, так как у каждого есть свои требования. Если заявка оформлена неправильно, рукопись не станут рассматривать.</p>
                 </li>
                 <li>
-                    <p>Ведёт переговоры от твоего лица и подбирает самые выгодные условия на рынке</p>
+                    <p>Ведёт переговоры от твоего лица и подбирает самые выгодные условия на рынке.</p>
                 </li>
                 <li>
                     <p>Предлагает автору различные варианты пиара, раскрутки.</p>
@@ -1080,11 +1105,11 @@
         <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <div class="button_prev_modal_st2"><i class="back-icon"></i> Назад</div>
         <h2 class="h2">Остались вопросы? Ответим на все.</h2>
-        <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
-        <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-        <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-        <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
-        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
+        <p class="modal_text">Выбирай удобный способ связи.</p>
+        <a href="tel:+779262777331" class="choose_connect phone-icon">Позвонить +7 (926) 277 73 31</a>
+        <a href="https://msng.link/wa/79262777331" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
+        <a href="https://msng.link/vi/79262777331" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в VK</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <div class="mb-desc-120"></div>
     </div>
@@ -1095,11 +1120,11 @@
         <div class="button_close">Закрыть <i class="close-icon"></i> </div>
         <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
         <h2 class="h2">Остались вопросы? Ответим на все.</h2>
-        <p class="modal_text">Выбирай удобный способ связи. И мы постораемся все решить.</p>
-        <a href="tel:+79264348643" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-        <a href="https://msng.link/wa/79264348643" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-        <a href="https://msng.link/vi/79264348643" class="choose_connect viber-icon">Написать в Viber</a>
-        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
+        <p class="modal_text">Выбирай удобный способ связи.</p>
+        <a href="tel:+79262777331" class="choose_connect phone-icon">Позвонить +7 (926) 277 73 31</a>
+        <a href="https://msng.link/wa/79262777331" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
+        <a href="https://msng.link/vi/79262777331" class="choose_connect viber-icon">Написать в Viber</a>
+        <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в VK</a>
         <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         <div class="mb-desc-120"></div>
     </div>
@@ -1111,7 +1136,9 @@
     <div data-simplebar class="modal_choose_service">
 
         <div class="header-modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i></div>
+            </div>
             <!--<div class="button_prev_modal"><i class="back-icon"></i> Назад</div>-->
             <h2 class="h2">Выбрать услугу</h2>
         </div>
@@ -1195,7 +1222,7 @@
         <div class="footer_modal">
             <h3 class="h3">Я не знаю что мне нужно</h3>
             <p>Проконсультируем и поможем с выбором</p>
-            <span class="more take_question">Попросить помощь</span>
+            <span class="more take_question">Получить помощь</span>
             <div class="pb-20"></div>
         </div>
 
@@ -1208,10 +1235,12 @@
     <div data-simplebar class="modal_choose_service">
 
         <div class="header-modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i> </div>
-            <div class="button_prev_modal_st3"><i class="back-icon"></i> Назад</div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i> </div>
+                <div class="button_prev_modal_st3"><i class="back-icon"></i> Назад</div>
+            </div>
             <h2 class="h2">Дополнительные услуги</h2>
-            <p>Нужны ли вам доп услуги?</p>
+            <p>Хочешь ли добавить ещё услугу?</p>
         </div>
 
         <div class="body_modal">
@@ -1248,7 +1277,7 @@
         <div class="footer_modal">
             <h3 class="h3">Я не знаю что мне нужно</h3>
             <p>Проконсультируем и поможем с выбором</p>
-            <span class="more make_question_last">Попросить помощь</span>
+            <span class="more make_question_last">Получить помощь</span>
             <div class="pb-20"></div>
         </div>
 
@@ -1260,8 +1289,10 @@
 <div class="modal__wrapper hidden take_order__modal">
     <div data-simplebar class="modal_choose_service">
         <div class="header-modal">
-            <div class="button_close">Закрыть <i class="close-icon"></i></div>
-            <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
+            <div class="mobile-fix">
+                <div class="button_close">Закрыть <i class="close-icon"></i></div>
+                <div class="button_prev_modal_st4"><i class="back-icon"></i> Назад</div>
+            </div>
             <h2 class="h2">Оставить заявку</h2>
         </div>
         <div class="order_result">

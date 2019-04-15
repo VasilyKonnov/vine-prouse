@@ -54,7 +54,7 @@ $(document).ready(function(){
     }
     autoType(".type-js", 150);
 
-$(".phone_mask").inputmask({"mask": "+7 (999) 999 99 99"});
+$(".phone_mask").inputmask({"mask": "+7 (999) 999 9999"});
 
 //console.log($('body').width());
 
@@ -500,7 +500,7 @@ $(".phone_mask").inputmask({"mask": "+7 (999) 999 99 99"});
                 var subTitle = $(janrBlock).find('.subtitle').text();
 
 
-                orderResult += '<p><i>' + subTitle + '</i></p>';
+                orderResult += '<p>' + subTitle + '</p>';
                 $(janrBlock).addClass('processed-once')
             }
 

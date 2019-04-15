@@ -228,7 +228,7 @@ try {
 //    $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('wineandprose@wineandprose.ru', 'Сайт Wine&Prose');
+    $mail->setFrom('hello@wineandprose.ru', 'Сайт Wine&Prose');
 
     $mail->addAddress('vasiliy.konnov@gmail.com');     // Add a recipient
     $mail->addAddress('hello@wineandprose.ru');     // Add a recipient

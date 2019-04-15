@@ -28,9 +28,17 @@
 
         <bitton class="pink-button how_connect">Связаться</bitton>
 
+        <div class="callback-header-mob">
+
+            <a href="https://vk.com/wine_and_prose" class="vk vk-header"></a>
+            <a href="https://www.instagram.com/wine_and_prose/" class="inst inst-header"></a>
+
+        </div>
+
 <!--        <p><b>Телефон:</b> <a href="tel:+79264348643">+7 (926) 434 86 43</a></p>-->
 <!--        <p><b>Email:</b> <a href="mailto:hello@wineandprose.ru">hello@wineandprose.ru</a></p>-->
 <!--        <p><b>Наш инстаграмм:</b></p><a class="inst" href="https://www.instagram.com/wine_and_prose/" target="_blank"></a>-->
+
     </div>
 </div>
 <header id="header" class="header show">
@@ -131,10 +139,10 @@
             <h2 class="h2">Как ты хочешь с нами связаться?</h2>
             <p class="modal_text">Давай напишем хорошую книгу!</br>
                 Оставь заявку. Мы свяжемся и все обсудим.</p>
-            <a href="tel:+79645154789" class="choose_connect phone-icon">Позвонить +7 (926) 434 86 43</a>
-            <a href="https://msng.link/wa/79645154789" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
-            <a href="https://msng.link/vi/79645154789" class="choose_connect viber-icon">Написать в Viber</a>
-            <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в Vk</a>
+            <a href="tel:+79262777331" class="choose_connect phone-icon">Позвонить +7 (926) 277 73 31</a>
+            <a href="https://msng.link/wa/79262777331" class="choose_connect whatsapp-icon">Написать в WhatsApp</a>
+            <a href="https://msng.link/vi/79262777331" class="choose_connect viber-icon">Написать в Viber</a>
+            <a href="https://msng.link/vk/wine_and_prose" class="choose_connect vk-icon">Написать в VK</a>
             <a href="mailto:hello@wineandprose.ru" class="choose_connect mail-icon">Написать на hello@wineandprose.ru</a>
         </div>
     </div>

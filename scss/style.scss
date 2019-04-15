@@ -429,6 +429,14 @@ ul li p {
     height: 20px;
   }
 }
+
+.callback-header-mob{
+  margin-top: 20px;
+  .inst{
+
+  }
+}
+
 input.phone_mask::placeholder{
   color: transparent!important;
 }
@@ -1454,7 +1462,7 @@ footer{
   line-height: 24px;
   position: absolute;
   right: 60px;
-  width: 100px;
+  width: 96px;
   color: #231F20;
   opacity: 0.5;
   cursor: pointer;
@@ -1831,7 +1839,8 @@ footer{
 }
 .mail-icon{
   &::before{
-      background-image: url("../img/pink-mail.svg");
+    background-image: url("../img/pink-mail.svg");
+    //top: 31px;
   }
   &:hover{
     &::before {
@@ -1922,8 +1931,6 @@ footer{
     padding-top: 31%;
   }
 }
-
-
 .modal_wrapper_service{
   display: flex;
   background-color: #FDFAF7;
@@ -2602,6 +2609,15 @@ footer{
 }
 
 @media screen and (max-width: 1000px) {
+  .mobile-fix{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 5;
+  }
   .right_stuck_modal h2 {
     margin-top: 27px;
   }
@@ -3130,6 +3146,22 @@ footer{
 
 @media screen and (max-width: 480px) {
 
+  .choose_connect {
+    padding-left: 60px;
+    &::before{
+      left: 10px;
+    }
+  }
+  .button_prev_modal_st4 {
+    left: 0px;
+  }
+  .button_prev{
+    left: 24px;
+  }
+  .button_close{
+    right: 30px;
+  }
+
   ul li p {
     font-size: 16px;
     margin: 5px 0;
@@ -3252,4 +3284,11 @@ footer{
     margin: 0 0 5px 0;
   }
 
+}
+@media screen and (max-width: 400px) {
+  .mail-icon{
+    &::before{
+      top: 31px;
+    }
+  }
 }
