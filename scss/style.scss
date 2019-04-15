@@ -2965,6 +2965,9 @@ footer{
   }
 }
 @media screen and (max-width: 580px) {
+  .wrapper-text ul li p {
+    margin: 0 0 16px;
+  }
   .white-button{
     font-size: 16px !important;
     &::after{
@@ -3145,7 +3148,6 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-
   .choose_connect {
     padding-left: 60px;
     &::before{
@@ -3285,6 +3287,7 @@ footer{
   }
 
 }
+
 @media screen and (max-width: 400px) {
   .mail-icon{
     &::before{
